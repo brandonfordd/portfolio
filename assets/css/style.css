@@ -95,26 +95,47 @@ section h2 {
 .work {
 padding-left: 93px;
 }
-
+/* wraps the content and turns them into flexboxes */
 .work-list {
     display: flex;
     list-style-type: none;
     padding: 10px;
     justify-content: center;
     flex-wrap: wrap;   
-}
-/* border elements for work boxes */
+} 
+
 .work-list li {
     margin:1%;
-    width: 500px;
-    height: 300px;
-    border: solid;
 }
 /* elements inside work boxes */
 .work-list li a {
     text-decoration: none;
-    color: purple; 
+}
+/* border for img */
+.slideimg {
     border: solid;
-    width:inherit;
-    height: inherit 
+    color: lavender;
+}
+
+.img-title {
+    position: absolute;
+    color:white;
+    background-color: black;
+    padding: 5px 20px;
+    margin: 3px;
+}
+
+.contact-me {
+    /* display:flex; */
+    text-decoration: none;
+}
+
+.contact-me ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.contact-me a {
+text-decoration: none;;
 }
