@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #9ccc9c;
+    background-color: #3b483d;
 }
 
 /* This class controls the main header */
@@ -18,20 +18,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3% 2% 0 0;
+    padding: 10px 2% 0 0;
     margin: 0;
     text-align: center;
-    position: relative
+    position: relative;
 }
-
+/* my name in the header */
 .header-main h1 {
-    color:peachpuff;
+    color: white;
     font-size: 60px;
-    background-color: brown;
-    padding: 0 1% 0 3%;
-    margin: 0;
+    background-color: #c9815c;
+    padding: 0 1% 0 1%;
+    margin: 0 10px;
 }
-
+/* main nav elements */
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -39,26 +39,37 @@ nav ul {
     min-width: 400px;
     list-style-type: none;
     position: absolute;
-    right: 1%;
+    right: 1%;;
     bottom: 0;
 }
 
 nav a {
     text-decoration: none;
     font-size: x-large;
+    background: #c9815c;
+    color: white;
+    padding: 0 10px
+}
+/* helps the middle img fit multitple res */
+.imgfit {
+    display: grid;
+    height: 100%;
 }
 
-main {
+.center-img {
+    max-width: 100%;
+    max-height: 100vh;
+    width: auto;
+    margin: auto;
 }
-
+/* adding flex to all the sections in the body  */
 section {
     display: flex;
     flex-direction: row;
     margin: 1%;
 }
-
+/* elements for h2 tags for all sections */
 section h2 {
-    /* display:inline-block; */
     padding: 10px;
     font-size: 30px;
     border-right: solid;
@@ -66,10 +77,11 @@ section h2 {
     border-right-style:dashed;
     text-align: center;
 }
-
+/* if needed, elements for p for about me  */
 .about-me-section {
     p
 }
+/* next to classes center the h2 tag to align with other sections */
 .about-me {
     padding-left: 35px;
     white-space: nowrap;
@@ -79,6 +91,7 @@ section h2 {
     padding: 5%;
     text-align: left;
 }
+/* same as before, helps the h2 tag align with other h2 tags */
 .work {
 padding-left: 93px;
 }
@@ -88,21 +101,20 @@ padding-left: 93px;
     list-style-type: none;
     padding: 10px;
     justify-content: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
-
+/* border elements for work boxes */
 .work-list li {
     margin:1%;
     width: 500px;
     height: 300px;
     border: solid;
 }
-
+/* elements inside work boxes */
 .work-list li a {
     text-decoration: none;
-    color: purple;
-   
+    color: purple; 
+    border: solid;
+    width:inherit;
+    height: inherit 
 }
-}
-
