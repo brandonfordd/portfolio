@@ -15,18 +15,19 @@ header {
 
 /* This class controls the main header */
 .header-main {
+    position: sticky;
+    z-index: 1;
+    top: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px 2% 0 0;
     margin: 0;
-    text-align: center;
-    position: relative;
+    box-shadow: 0 0px 20px ;
 }
 /* my name in the header */
 .header-main h1 {
     color: white;
-    font-size: 60px;
+    font-size: 30px;
     background-color: #c9815c;
     padding: 0 1% 0 1%;
     margin: 0 10px;
@@ -36,20 +37,32 @@ nav ul {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    min-width: 400px;
+    min-width: 500px;
     list-style-type: none;
     position: absolute;
-    right: 1%;;
+    right: 1%;
     bottom: 0;
 }
 
 nav a {
     text-decoration: none;
-    font-size: x-large;
-    background: #c9815c;
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
     color: white;
     padding: 0 10px
 }
+
+nav a:hover {
+    background-color: #c9815c;
+    color:white;
+}
+
+nav a:active {
+    box-shadow: 0 0 10px #000 inset;
+}
+
+
 /* helps the middle img fit multitple res */
 .imgfit {
     display: grid;
@@ -107,14 +120,14 @@ padding-left: 93px;
 .work-list li {
     margin:1%;
 }
+
 /* elements inside work boxes */
 .work-list li a {
     text-decoration: none;
 }
-/* border for img */
-.slideimg {
-    border: solid;
-    color: lavender;
+
+.slide-holder {
+    position: relative;
 }
 
 .img-title {
@@ -123,6 +136,12 @@ padding-left: 93px;
     background-color: black;
     padding: 5px 20px;
     margin: 3px;
+}
+
+/* border for img */
+.slideimg {
+    border: solid;
+    color: lavender;
 }
 
 .contact-me {
