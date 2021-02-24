@@ -34,7 +34,7 @@ header {
     border-bottom: hidden;
     padding: 0 1% 0 1%;
     margin: 0 10px;
-    text-shadow: 0 0 20px black;
+    text-shadow: 0 0 20px #FFFF66;
 }
 /* main nav elements */
 nav ul {
@@ -48,13 +48,6 @@ nav ul {
     bottom: 0;
 }
 
-button {
-    position: absolute;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
-}
-
 nav a {
     text-decoration: none;
     font-size: 20px;
@@ -62,7 +55,7 @@ nav a {
     background: none;
     color: white;
     padding: 0 10px;
-    text-shadow: 0 0 20px black;
+    text-shadow: 0 0 20px #FFFF66;
 }
 /* puts pseudo on nav anchor */
 nav a:hover {
@@ -74,17 +67,16 @@ nav a:active {
     box-shadow: 0 0 10px #000 inset;
 }
 
-/* helps the middle img fit multitple res */
-.imgfit {
+/* helps the middle img fit multiple res */
+.img-fit {
     display: grid;
     height: 100%;
 }
 
 .center-img {
-    max-width: 100%;
-    max-height: 100vh;
-    width: auto;
+    width: 100%;
     margin: auto;
+    border-bottom: solid;
 }
 /* adding flex to all the sections in the body  */
 section {
@@ -96,24 +88,26 @@ section {
 section h2 {
     position: relative;
     padding: 10px;
-    margin: 0;
+    margin-top:30px;
     font-size: 30px;
-    border-right: solid;
-    border-right-width: 5px;
-    border-right-style:dashed;
     color: white;
-    border-color: black;
-    text-shadow: 0 0 10px black;
-    /* text-align: center; */
+    background-color: rgb(87, 85, 85);
+    border-top: double;
+    border-bottom: double;
+    border-right: solid;
+    border-right-style:double;
+    border-width: 3px;
+    border-color: #FFFF66;
+    text-shadow: 0 0 10px #FFFF66;
 }
 /* if needed, elements for p for about me  */
-.about-me-section {
-    p
-}
+
 /* next to classes center the h2 tag to align with other sections */
+
 .about-me {
     padding-left: 35px;
     white-space: nowrap;
+
 }
 
 .about-me-p {
@@ -122,17 +116,18 @@ section h2 {
 }
 /* same as before, helps the h2 tag align with other h2 tags */
 .work {
-padding-left: 93px;
+    padding: 0 50px 0 53px;
+    margin-top:50px;
 
 }
-/* wraps the content and turns them into flexboxes */
+/* wraps the content and turns them into flex-boxes */
 .work-list {
     display: flex;
     list-style-type: none;
     padding: 10px;
     justify-content: center;
-    flex-wrap: wrap;   
-} 
+    flex-wrap: wrap;
+}
 
 .work-list li {
     margin:1%;
@@ -156,7 +151,7 @@ padding-left: 93px;
 }
 
 /* border for img */
-.slideimg {
+.slide-img {
     border: solid;
     color: #FFFF66;
 }
