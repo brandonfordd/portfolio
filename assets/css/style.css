@@ -142,12 +142,8 @@ section h2 {
 .work-list li a {
     text-decoration: none;
 }
-
-.slide-holder {
-    position: relative;
-}
-
-.img-title {
+/* slide titles one for main and one for all others */
+.main-img-title {
     position: absolute;
     color:white;
     background-color: black;
@@ -155,10 +151,47 @@ section h2 {
     margin: 3px;
 }
 
-/* border for img */
-.slide-img {
+.img-title {
+    position: absolute;
+    color:white;
+    background-color: black;
+    padding: 3px 5px;
+    margin: 3px;
+}
+/* imagine border, one for main and one for all others */
+.main-slide-img {
     border: solid;
     color: #FFFF66;
+    width: 495px;
+    height: 306px;
+
+}
+
+.slide-img {
+    bottom:4px;
+    border: solid;
+    color: #FFFF66;
+    width: 242px;
+    height: 145px;
+    margin: 0;
+}
+/* setting box for smaller boxes to flex */
+.box-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 506px;
+    height: 306px;
+
+}
+
+.box-box li {
+    display: flex;
+}
+
+/* hover element to change img border to black onces hovering */
+.work-list img:hover {
+    opacity:70%;
+    border-color: black;
 }
 
 .contact-div {
@@ -187,4 +220,3 @@ section h2 {
     padding: 5px 7px;
     background: rgb(71, 69, 69);
 }
-
