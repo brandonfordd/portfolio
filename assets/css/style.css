@@ -35,7 +35,7 @@ header {
     border-bottom: hidden;
     padding: 0 1% 3px 1%;
     margin: 0 10px;
-    text-shadow: 0 0 20px #FFFF66;
+    text-shadow: 0 0 5px #FFFF66;
 }
 /* main nav elements */
 nav ul {
@@ -134,7 +134,7 @@ section h2 {
     padding: 1%;
     border: solid;
     border-color: black;
-    text-shadow: 0 0 4px #FFFF66 ;
+    text-shadow: 0 0 2px #FFFF66 ;
 }
 
 .about-me-img {
@@ -161,10 +161,9 @@ section h2 {
     margin-left: 56px;
     display: flex;
     list-style-type: none;
-    padding: 10px;
+    padding: 40px;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 .work-list li {
