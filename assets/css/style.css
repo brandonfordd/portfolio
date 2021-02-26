@@ -110,20 +110,48 @@ section h2 {
 
 /* next to classes center the h2 tag to align with other sections */
 
-.about-me {
+.about-me-header {
     padding-left: 35px;
-
 }
 
+.about-me {
+    justify-content: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    height: 260px;
+    margin-left: 50px;
+    padding: 0 5%;
+    /* margin-right: 50px; */
+    background-color: rgb(93, 92, 92);
+}
 .about-me-p {
-    padding: 5%;
+    width: 100%;
+    height: 220px;
+    margin: 20px;
+    background:#3b483d ;
     text-align: left;
+    padding: 2%;
+    border: solid;
 }
+
+.about-me-img {
+    border: solid;
+    border-color: #FFFF66;
+    width: 300px;
+    height: 220px;
+    margin: 20px;
+}
+
 /* same as before, helps the h2 tag align with other h2 tags */
 .work {
     padding: 0 50px 0 53px;
     margin-top: 30px;
 
+}
+
+.work-div {
+    width: 100%;
 }
 /* wraps the content and turns them into flex-boxes */
 .work-list {
@@ -132,6 +160,7 @@ section h2 {
     padding: 10px;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .work-list li {
@@ -142,52 +171,89 @@ section h2 {
 .work-list li a {
     text-decoration: none;
 }
+
+/* imagine border, one for main and one for all others */
+.main-slide-img {
+    /* position: relative; */
+    /* z-index: -1; */
+    border: solid;
+    color: #FFFF66;
+    width: 785px;
+    height: 480px;
+
+}
+
 /* slide titles one for main and one for all others */
 .main-img-title {
     position: absolute;
-    color:white;
-    background-color: black;
+    color:black;
+    background-color: #FFFF66;
+    font-size: 50px;
+    /* top: 974px; */
     padding: 5px 20px;
-    margin: 3px;
+    margin: 30px 0;
+    text-shadow: 0 0 2px black;
+}
+
+.slide-img {
+    /* position:relative; */
+    /* z-index: -1; */
+    border: solid;
+    color: #FFFF66;
+    width: 380px;
+    height: 230px;
+    /* top: -8px; */
+   
+}
+
+#margin1 {
+    margin: 0 10px 10px 0;
+}
+
+#margin2 {
+    margin: 0 0 10px 10px;
+}
+
+#margin3 {
+    margin: 10px 10px 0 0;
+}
+
+#margin4 {
+    margin: 10px 0 0 10px;
 }
 
 .img-title {
     position: absolute;
-    color:white;
-    background-color: black;
+    color:black;
+    font-size: 20px;
+    background-color: #FFFF66;
     padding: 3px 5px;
-    margin: 3px;
-}
-/* imagine border, one for main and one for all others */
-.main-slide-img {
-    border: solid;
-    color: #FFFF66;
-    width: 495px;
-    height: 306px;
-
-}
-
-.slide-img {
-    bottom:4px;
-    border: solid;
-    color: #FFFF66;
-    width: 242px;
-    height: 145px;
-    margin: 0;
+    margin: 15px 0;
+    text-shadow: 0 0 1px black;
 }
 /* setting box for smaller boxes to flex */
 .box-box {
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    width: 506px;
-    height: 306px;
-
+    width: 800px;
+    height: 480px;
+    justify-content: center;
 }
 
 .box-box li {
-    display: flex;
-}
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 340px;
+    height: 230px; */
+    list-style-type: none;
+} 
 
+.box-box a {
+    width: 300px;
+    height: 230px;
+}
 /* hover element to change img border to black onces hovering */
 .work-list img:hover {
     opacity:70%;
