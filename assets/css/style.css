@@ -27,17 +27,19 @@ header {
 /* my name in the header */
 .header-main h1 {
     color:white;
+    font-family: 'Noto Sans JP', sans-serif ;
     font-size: 30px;
     background-color: #c9815c;
     border: solid;
     border-color:#b6b630;
     border-bottom: hidden;
-    padding: 0 1% 0 1%;
+    padding: 0 1% 3px 1%;
     margin: 0 10px;
     text-shadow: 0 0 20px #FFFF66;
 }
 /* main nav elements */
 nav ul {
+    font-family: 'Noto Sans JP', sans-serif;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -45,7 +47,7 @@ nav ul {
     list-style-type: none;
     position: absolute;
     right: 1%;
-    bottom: 0;
+    bottom: 5px;
 }
 
 nav a {
@@ -91,7 +93,7 @@ section {
 /* elements for h2 tags for all sections */
 section h2 {
     position: relative;
-    padding: 10px;
+    padding: 15px;
     margin-top:30px;
     margin-bottom: 25px;
     font-size: 30px;
@@ -102,35 +104,37 @@ section h2 {
     border-right: solid;
     border-right-style:double;
     border-width: 3px;
-    border-color: #FFFF66;
+    border-color: #d87c4e;
     text-shadow: 0 0 10px #FFFF66;
     white-space: nowrap;
 }
-/* if needed, elements for p for about me  */
+
 
 /* next to classes center the h2 tag to align with other sections */
 
 .about-me-header {
+    margin-top: 50%;
     padding-left: 35px;
 }
-
+/* if needed, elements for p for about me  */
 .about-me {
     display: flex;
     margin-left: 50px;
     padding: 0 5%;
     background-color: rgb(93, 92, 92);
 }
+
 .about-me-p {
     color: white;
-    font-weight: bolder;
-    font-size: 15px;
+    /* font-weight: bolder; */
+    font-size: 18px; 
     margin: 20px;
     background:#3b483d;
     text-align: left;
     padding: 1%;
     border: solid;
     border-color: black;
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 4px #FFFF66 ;
 }
 
 .about-me-img {
@@ -143,8 +147,8 @@ section h2 {
 
 /* same as before, helps the h2 tag align with other h2 tags */
 .work {
-    padding: 0 50px 0 53px;
-    margin-top: 30px;
+    padding: 15px 50px 15px 53px;
+    margin-top: 240px;
 
 }
 
@@ -153,6 +157,8 @@ section h2 {
 }
 /* wraps the content and turns them into flex-boxes */
 .work-list {
+    background-color: rgb(93, 92, 92);
+    margin-left: 56px;
     display: flex;
     list-style-type: none;
     padding: 10px;
@@ -173,7 +179,7 @@ section h2 {
 /* imagine border, one for main and one for all others */
 .main-slide-img {
     border: solid;
-    color: #FFFF66;
+    border-color: black;
     width: 785px;
     height: 480px;
 
@@ -182,17 +188,17 @@ section h2 {
 /* slide titles one for main and one for all others */
 .main-img-title {
     position: absolute;
-    color:black;
+    color:white;
     background-color: #FFFF66;
     font-size: 50px;
     padding: 5px 20px;
-    margin: 30px 0;
-    text-shadow: 0 0 2px black;
+    margin: 30px 3px;
+    text-shadow: 0 0 9px black;
 }
 
 .slide-img {
     border: solid;
-    color: #FFFF66;
+    border-color: black;
     width: 380px;
     height: 230px;
     
@@ -217,12 +223,12 @@ section h2 {
 
 .img-title {
     position: absolute;
-    color:black;
+    color:white;
     font-size: 20px;
     background-color: #FFFF66;
     padding: 3px 5px;
-    margin: 15px 0;
-    text-shadow: 0 0 1px black;
+    margin: 15px 3px;
+    text-shadow: 0 0 8px black;
 }
 /* setting box for smaller boxes to flex */
 .box-box {
@@ -244,8 +250,12 @@ section h2 {
 }
 /* hover element to change img border to black onces hovering */
 .work-list img:hover {
-    opacity:70%;
-    border-color: black;
+    opacity: 90%;
+    border-color: #FFFF66;
+}
+
+.work-list a h3:hover {
+    background-color: #FFFF66;
 }
 
 .contact-div {
@@ -254,11 +264,14 @@ section h2 {
 }
 
 .contact-me {
+    background-color: rgb(93, 92, 92);
     display: flex;
     flex-direction: row;
     list-style-type: none;
     text-decoration: none;
     justify-content: center;
+    height: 100%;
+    margin-left: 45px;
 }
 
 
