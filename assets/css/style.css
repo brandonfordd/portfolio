@@ -128,8 +128,9 @@ section h2 {
 .about-me-p {
     color: white;
     /* font-weight: bolder; */
-    font-size: 18px; 
-    margin: 20px;
+    font-size: 18px;
+   /* top | right | bottom | left */
+    margin: 20px 20px 20px 0;
     background:#3b483d;
     text-align: left;
     padding: 1%;
