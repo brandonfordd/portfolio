@@ -5,8 +5,13 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+html {
+    /* width: 100%; */
+}
+
 body {
     background-color: gray;
+    /* width: 100%; */
 }
 
 header {
@@ -154,12 +159,11 @@ section h2 {
 
 .work-div {
     width: 100%;
+    margin-left: 56px;
 }
 /* wraps the content and turns them into flex-boxes */
 .work-list {
     background-color: rgb(93, 92, 92);
-    margin-left: 56px;
-    width: x;
     display: flex;
     list-style-type: none;
     padding: 40px;
@@ -180,8 +184,8 @@ section h2 {
 .main-slide-img {
     border: solid;
     border-color: black;
-    width: 785px;
-    height: 480px;
+    width: 650px;
+    height: 400px;
 
 }
 
@@ -199,10 +203,8 @@ section h2 {
 .slide-img {
     border: solid;
     border-color: black;
-    width: 380px;
-    height: 230px;
-    
-   
+    width: 315px;
+    height: 190px;
 }
 
 #margin1 {
@@ -235,8 +237,8 @@ section h2 {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
-    height: 480px;
+    width: 650px;
+    height: 400px;
     justify-content: center;
 }
 
