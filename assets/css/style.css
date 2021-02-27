@@ -86,7 +86,7 @@ nav a:active {
 section {
     display: flex;
     flex-direction: row;
-    margin: 1% 0 2% 0;
+    margin: 2% 0 0 0;
     border-bottom: solid;
     border-top: solid;
     border-color: rgb(156, 150, 150);
@@ -286,4 +286,11 @@ section h2 {
     margin: 50px;
     padding: 5px 7px;
     background: rgb(71, 69, 69);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    background-color: #333f35;
 }
