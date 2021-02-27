@@ -1,21 +1,14 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
 body {
     background-color: gray;
-    /* width: 100%; */
 }
 
 header {
     background-color: #3b483d;
-}
-
-/* This class controls the main header */
-.header-main {
     position: sticky;
     z-index: 1;
     top: 0;
@@ -25,8 +18,9 @@ header {
     margin: 0;
     box-shadow: 0 0px 20px ;
 }
+
 /* my name in the header */
-.header-main h1 {
+.header-title h1 {
     color:white;
     font-family: 'Noto Sans JP', sans-serif ;
     font-size: 30px;
@@ -34,12 +28,14 @@ header {
     border: solid;
     border-color:#b6b630;
     border-bottom: hidden;
-    padding: 0 1% 3px 1%;
-    margin: 0 10px;
+    width: 100%;
+    padding: 3%;
+    margin: 0 9px;
     text-shadow: 0 0 5px #FFFF66;
+    white-space: nowrap;
 }
-/* main nav elements */
-nav ul {
+/* Elements for Nav box controls */
+.nav {
     font-family: 'Noto Sans JP', sans-serif;
     display: flex;
     justify-content: space-between;
@@ -50,7 +46,7 @@ nav ul {
     right: 1%;
     bottom: 5px;
 }
-
+/* Nav anchor elements */
 nav a {
     text-decoration: none;
     font-size: 20px;
@@ -60,7 +56,8 @@ nav a {
     padding: 0 10px;
     text-shadow: 0 0 20px #FFFF66;
 }
-/* puts pseudo on nav anchor */
+
+/* puts pseudo on nav anchor elements */
 nav a:hover {
     background-color: #c9815c;
     color:black;
@@ -71,10 +68,6 @@ nav a:active {
 }
 
 /* helps the middle img fit multiple res */
-.img-fit {
-    display: grid;
-    height: 100%;
-}
 
 .center-img {
     width: 100%;
@@ -82,6 +75,7 @@ nav a:active {
     border-bottom: solid;
     border-color: rgb(156, 150, 150);
 }
+
 /* adding flex to all the sections in the body  */
 section {
     display: flex;
