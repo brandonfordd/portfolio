@@ -159,6 +159,7 @@ section h2 {
 .work-list {
     background-color: rgb(93, 92, 92);
     margin-left: 56px;
+    width: x;
     display: flex;
     list-style-type: none;
     padding: 40px;
