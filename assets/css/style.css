@@ -5,10 +5,6 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-html {
-    /* width: 100%; */
-}
-
 body {
     background-color: gray;
     /* width: 100%; */
@@ -208,19 +204,20 @@ section h2 {
 }
 
 #margin1 {
-    margin: 0 10px 10px 0;
+/* top | right | bottom | left */
+    margin: 3px 6px 6px 0;
 }
 
 #margin2 {
-    margin: 0 0 10px 10px;
+    margin: 3px 0 6px 6px;
 }
 
 #margin3 {
-    margin: 10px 10px 0 0;
+    margin: 6px 6px 0 0;
 }
 
 #margin4 {
-    margin: 10px 0 0 10px;
+    margin: 6px 0 0 6px;
 }
 
 .img-title {
