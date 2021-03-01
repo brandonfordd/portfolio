@@ -3,8 +3,14 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+html {
+    height: 100%;
+    display: grid;
+}
+
 body {
     background-color: gray;
+    /* display: grid; */
 }
 
 header {
@@ -70,7 +76,7 @@ nav a:active {
 /* helps the middle img fit multiple res */
 .center-img {
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
     border-bottom: solid;
     border-color: rgb(156, 150, 150);
 }
@@ -79,7 +85,9 @@ nav a:active {
 section {
     display: flex;
     flex-direction: row;
-    margin: 2% 0 0 0;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     border-bottom: solid;
     border-top: solid;
     border-color: rgb(156, 150, 150);
@@ -110,34 +118,30 @@ section h2 {
     margin-top: 50%;
     padding-left: 35px;
 }
+
 /* if needed, elements for p for about me  */
 .about-me {
-    display: flex;
+    width: 100%;
     margin-left: 50px;
-    padding: 0 5%;
+    padding: 0;
     background-color: rgb(93, 92, 92);
 }
 
 .about-me-p {
-    color: white;
-    /* font-weight: bolder; */
-    font-size: 18px;
-   /* top | right | bottom | left */
-    margin: 20px 20px 20px 0;
-    background:#3b483d;
-    text-align: left;
-    padding: 1%;
-    border: solid;
-    border-color: black;
-    text-shadow: 0 0 2px #FFFF66 ;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 2%;
+    text-align: justify;
+    text-shadow: 0 1px 4px #000000 ;
 }
 
 .about-me-img {
+    float: right;
     border: solid;
     border-color: #FFFF66;
     width: 300px;
     height: 220px;
-    margin: 20px;
+    margin: 3% 3% 0 2%;
 }
 
 /* same as before, helps the h2 tag align with other h2 tags */
@@ -156,7 +160,7 @@ section h2 {
     background-color: rgb(93, 92, 92);
     display: flex;
     list-style-type: none;
-    padding: 40px;
+    /* padding: 40px; */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -174,27 +178,28 @@ section h2 {
 .main-slide-img {
     border: solid;
     border-color: black;
-    width: 650px;
-    height: 400px;
+    width: 800px;
+    height: 500px;
 
 }
 
 /* slide titles one for main and one for all others */
 .main-img-title {
     position: absolute;
-    color:white;
+    color:rgb(71, 68, 68);
     background-color: #FFFF66;
     font-size: 50px;
     padding: 5px 20px;
     margin: 30px 3px;
     text-shadow: 0 0 9px black;
+    white-space: nowrap;
 }
 
 .slide-img {
     border: solid;
     border-color: black;
-    width: 315px;
-    height: 190px;
+    width: 394px;
+    height: 242px;
 }
 
 #margin1 {
@@ -216,20 +221,21 @@ section h2 {
 
 .img-title {
     position: absolute;
-    color:white;
-    font-size: 20px;
+    color:rgb(71, 68, 68);
+    font-size: 25px;
     background-color: #FFFF66;
     padding: 3px 5px;
     margin: 15px 3px;
     text-shadow: 0 0 8px black;
+    white-space: nowrap;
 }
 /* setting box for smaller boxes to flex */
 .box-box {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    width: 650px;
-    height: 400px;
+    width: 800px;
+    height: 500px;
     justify-content: center;
 }
 
@@ -282,8 +288,23 @@ section h2 {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    padding: 1%;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    padding: 2%;
     background-color: #333f35;
+    height:max-content;
 }
+
+@media screen and (max-width: 1300px) {
+    .about-me-p {
+      font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .img-title {
+      font-size: 35px;
+    }
+}
+
