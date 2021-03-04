@@ -131,6 +131,7 @@ section h2 {
     color: rgb(255, 255, 255);
     font-size: 20px;
     padding: 2%;
+    margin: 10px;
     text-align: justify;
     text-shadow: 0 1px 4px #000000 ;
 }
@@ -154,15 +155,18 @@ section h2 {
 .work-div {
     width: 100%;
     margin-left: 56px;
+    background-color: rgb(93, 92, 92);
 }
 /* wraps the content and turns them into flex-boxes */
 .work-list {
-    background-color: rgb(93, 92, 92);
+    /* background-color: rgb(93, 92, 92); */
     display: flex;
     list-style-type: none;
     /* padding: 40px; */
     justify-content: center;
     flex-wrap: wrap;
+    margin: 10px;
+    
 }
 
 .work-list li {
@@ -177,9 +181,9 @@ section h2 {
 /* imagine border, one for main and one for all others */
 .main-slide-img {
     border: solid;
-    border-color: black;
-    width: 790px;
-    height: 500px;
+    border-color: rgb(41, 41, 41);
+    width: 750px;
+    height: 450px;
 
 }
 
@@ -197,9 +201,9 @@ section h2 {
 
 .slide-img {
     border: solid;
-    border-color: black;
-    width: 380px;
-    height: 242px;
+    border-color: rgb(41, 41, 41);
+    width: 366px;
+    height: 220px;
 }
 
 #margin1 {
@@ -234,8 +238,8 @@ section h2 {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
-    height: 500px;
+    width: 760px;
+    height: 460px;
     justify-content: center;
 }
 
