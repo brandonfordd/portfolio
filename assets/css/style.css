@@ -81,50 +81,30 @@ nav a:active {
     border-color: rgb(156, 150, 150);
 }
 
-/* adding flex to all the sections in the body  */
-section {
+.container {
+    width: 100%
+}
+
+.head-container {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-bottom: solid;
-    border-top: solid;
-    border-color: rgb(156, 150, 150);
-}
-/* elements for h2 tags for all sections */
-section h2 {
-    position: relative;
-    padding: 15px;
-    margin-top:30px;
-    margin-bottom: 25px;
-    font-size: 30px;
-    color: white;
-    background-color: rgb(87, 85, 85);
-    border-top: double;
-    border-bottom: double;
-    border-right: solid;
-    border-right-style:double;
-    border-width: 3px;
-    border-color: #d87c4e;
-    text-shadow: 0 0 10px #FFFF66;
-    white-space: nowrap;
-}
-
-
-/* next to classes center the h2 tag to align with other sections */
-
-.about-me-header {
-    margin-top: 50%;
-    padding-left: 35px;
-}
-
-/* if needed, elements for p for about me  */
-.about-me {
     /* width: 100%; */
-    margin-left: 50px;
-    padding: 0;
-    background-color: rgb(93, 92, 92);
+}
+
+.about-me-card {
+    width: 65%;
+    background-color: rgb(156, 150, 150);
+    margin: 2% auto;
+    border: solid;
+}
+
+.about-me-head {
+    text-align: center;
+    font-size: 35px;
+    padding: 1% 0;
+    background-color: yellow;
+}
+
+.about-me-body {
 }
 
 .about-me-p {
@@ -133,8 +113,9 @@ section h2 {
     /* padding: 2%; */
     height: 96%;
     /* top | right | bottom | left */
-    margin: 20px;
+    /* margin-top: 20px; */
     text-align: justify;
+    padding: 2%;
     text-shadow: 0 1px 4px #000000 ;
 }
 
@@ -148,46 +129,116 @@ section h2 {
     margin: 20px 2% 1% 1%;
 }
 
-/* same as before, helps the h2 tag align with other h2 tags */
-.work {
-    padding: 15px 50px 15px 53px;
-    margin-top: 240px;
-
-}
-
-.work-div {
-    width: 100%;
-    margin-left: 56px;
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 2% auto;
     background-color: rgb(93, 92, 92);
+    border: solid;
 }
+
+.contact-head {
+    background-color: yellow;
+    font-size: 35px;
+    padding: 3% 0;
+    white-space: nowrap;
+    text-align: center
+}
+
+.contact-body {
+    height: 100%;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.contact-me li {
+    margin: auto;
+}
+
+.contact-me a {
+    text-decoration: none;
+    color:white;
+    border:solid;
+    border-color: #FFFF66;
+    /* font-size: 15px; */
+    padding: 5px 7px;
+    background: rgb(71, 69, 69);
+}
+
+/* next to classes center the h2 tag to align with other sections */
+
+
+/* if needed, elements for p for about me  */
+.work-container {
+    /* display: flex; */
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.work-card {
+    /* width: 95%; */
+    margin: 1% 5%;
+    background-color: rgb(93, 92, 92);
+    border: solid;
+}
+
+/* same as before, helps the h2 tag align with other h2 tags */
+.work-head {
+    /* padding: 15px 50px 15px 53px; */
+    /* margin-top: 240px; */
+    text-align: center;
+    font-size: 35px;
+    background-color: yellow;
+    padding: 1%;
+
+}
+
+.work-body {
+    /* width: 100%; */
+    /* margin-left: 56px; */
+    /* background-color: rgb(93, 92, 92); */
+}
+
 /* wraps the content and turns them into flex-boxes */
 .work-list {
-    /* background-color: rgb(93, 92, 92); */
     display: flex;
     list-style-type: none;
-    /* padding: 40px; */
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px;
-    
+    margin: 1%;
 }
 
 .work-list li {
-    margin:1%;
+    /* height: 450px; */
+    /* width:750px; */
+    /* margin:1%; */
 }
 
 /* elements inside work boxes */
 .work-list li a {
     text-decoration: none;
+    height: inherit;
+    width: inherit;
 }
+
+.main-list {
+    height: 455px;
+    width:745px;
+    margin: 1%;
+}
+
 
 /* imagine border, one for main and one for all others */
 .main-slide-img {
     border: solid;
     border-color: rgb(41, 41, 41);
-    width: 750px;
-    height: 450px;
-
+    width: inherit;
+    height: inherit;
 }
 
 /* slide titles one for main and one for all others */
@@ -202,6 +253,10 @@ section h2 {
     white-space: nowrap;
 }
 
+.sec-list {
+    margin: 1%;
+}
+
 .slide-img {
     border: solid;
     border-color: rgb(41, 41, 41);
@@ -211,11 +266,12 @@ section h2 {
 
 #margin1 {
 /* top | right | bottom | left */
-    margin: 3px 6px 6px 0;
+    margin: 0px 6px 6px 0;
+
 }
 
 #margin2 {
-    margin: 3px 0 6px 6px;
+    margin: 0px 0 6px 6px;
 }
 
 #margin3 {
@@ -237,23 +293,22 @@ section h2 {
     white-space: nowrap;
 }
 /* setting box for smaller boxes to flex */
+
 .box-box {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    width: 760px;
-    height: 460px;
+    height: 455px;
+    width:745px;
     justify-content: center;
+    /* margin: 1%; */
 }
 
 .box-box li {
     list-style-type: none;
-} 
-
-.box-box a {
-    width: 300px;
-    height: 230px;
 }
+
+
 /* hover element to change img border to black onces hovering */
 .work-list img:hover {
     opacity: 90%;
@@ -264,35 +319,6 @@ section h2 {
     background-color: #FFFF66;
 }
 
-.contact-div {
-    position: relative;
-    width: 100%;
-}
-
-.contact-me {
-    background-color: rgb(93, 92, 92);
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    text-decoration: none;
-    justify-content: center;
-    height: 100%;
-    margin-left: 45px;
-}
-
-
-.contact-me a {
-    text-decoration: none;
-    position: relative;
-    top:53px;
-    color:white;
-    border:solid;
-    border-color: #FFFF66;
-    font-size: 15px;
-    margin: 50px;
-    padding: 5px 7px;
-    background: rgb(71, 69, 69);
-}
 
 footer {
     /* display: flex; */
