@@ -1,17 +1,18 @@
 :root {
   --primary-color: #3b483d;
-  --secondary-color: #536390;
-  --font-color: #333333;
+  --secondary-color: #ad8f53;
+  --font-color: #242424;
   --secondary-font-color: white;
-  --bg-color: #fff;
+  --bg-color: rgb(235, 235, 235);
   --border-color: black;
   --secondary-border-color: yellow;
-  --secondary-bg-color: rgb(175, 175, 175);
+  --secondary-bg-color: rgb(200, 200, 200);
   --heading-color: #3b483d;
-  --box-shadow:  rgba(0, 0, 0, 0.15) 2px 4px 10px 2px;
+  --box-shadow:  rgba(247, 251, 0, 0.623) 2px 4px 15px 2px;
   --secondary-box-shadow: none;
-  --text-shadow: 0 0 15px rgb(169, 185, 240);
-  --password-color: #cc0000;
+  --text-shadow: 0 2px 15px rgb(44, 44, 44);
+  --secondary-text-shadow: 0 0 50px rgb(251, 255, 0);
+
 }
 
 [data-theme="dark"] {
@@ -24,7 +25,6 @@
   --box-shadow: 0 0 8px black;
   --text-shadow: 0 1px 10px rgb(136, 86, 255);
   --secondary-box-shadow: 0 0 15px rgba(81, 32, 216, 0.911);
-  --password-color: rgba(196, 180, 240, 0.911);
 }
 
 
@@ -32,6 +32,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Noto Sans JP', sans-serif;
+    box-shadow: ;
 }
 
 html {
@@ -60,49 +61,136 @@ header {
 .header-title h1 {
     color: var(--secondary-font-color);
     font-family: 'Noto Sans JP', sans-serif ;
-    font-size: 30px;
-    background-color: #c9815c;
+    font-size: 35px;
+    background-color: var(--secondary-bg-color);
     border: solid;
-    border-color:#b6b630;
+    border-color:var(--secondary-border-color);
     border-bottom: hidden;
     width: 100%;
     padding: 3%;
     margin: 0 9px;
-    text-shadow: 0 0 5px #FFFF66;
+    text-shadow: var(--text-shadow);
     white-space: nowrap;
+    box-shadow: var(--box-shadow);
 }
 /* Elements for Nav box controls */
-.nav {
+
+
+.nav-container {
+  position: absolute;
+    right: 2%;
+    bottom: 9px;
+    height: 45%;
+
+}
+
+.nav-list {
     font-family: 'Noto Sans JP', sans-serif;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    min-width: 500px;
+    min-width: 600px;
     list-style-type: none;
-    position: absolute;
-    right: 1%;
-    bottom: 5px;
+    
+}
+
+.nav li {
+
 }
 /* Nav anchor elements */
-nav a {
+.nav-listEl a {
     text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 30px;
+    /* font-weight: bold; */
     background: none;
     color: white;
     padding: 0 10px;
-    text-shadow: 0 0 20px #FFFF66;
+    text-shadow: var(--secondary-text-shadow) ;
+    /* position: absolute; */
+    /* bottom: 100px; */
 }
 
 /* puts pseudo on nav anchor elements */
 nav a:hover {
-    background-color: #c9815c;
-    color:black;
+    background-color: var(--secondary-bg-color);
+    color:var(--font-color);
 }
 
 nav a:active {
     box-shadow: 0 0 10px #000 inset;
 }
+
+
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    text-decoration: none;
+    font-size: 30px;
+    /* font-weight: bold; */
+    background: none;
+    color: var(--secondary-font-color);
+    padding: 0 10px;
+    text-shadow: var(--secondary-text-shadow);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 7px;
+  outline: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: var(--secondary-bg-color);
+  color: var(--font-color);
+  /* outline: 0 !important; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top:37px;
+  right: -10px;
+  background-color: #f1f1f1;
+  min-width: 220px;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    text-align: center;
+  color: var(--font-color);
+  font-size: 40px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+
+
+
+
+
 
 /* helps the middle img fit multiple res */
 .center-img {
@@ -122,11 +210,12 @@ nav a:active {
 }
 
 .about-me-card {
-    width: 65%;
+    width: 90%;
     background-color: var(--secondary-bg-color);
     margin: 2% auto;
     border: solid;
     border-color: var(--border-color);
+    box-shadow: var(--box-shadow);
 }
 
 .about-me-head {
@@ -135,6 +224,7 @@ nav a:active {
     padding: 1% 0;
     background-color: var(--heading-color);
     color: var(--secondary-font-color);
+    text-shadow: var(--secondary-text-shadow);
 }
 
 .about-me-body {
@@ -149,7 +239,7 @@ nav a:active {
     /* margin-top: 20px; */
     text-align: justify;
     padding: 2%;
-    text-shadow: var(--text-shadow) ;
+    /* text-shadow: var(--text-shadow) ; */
 }
 
 .about-me-img {
@@ -162,48 +252,7 @@ nav a:active {
     margin: 20px 2% 1% 1%;
 }
 
-.contact-card {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    margin: 2% auto;
-    background-color: var(--secondary-bg-color);
-    border: solid;
-    border-color: var(--border-color);
-}
 
-.contact-head {
-    background-color: var(--heading-color);
-    color: var(--secondary-font-color);
-    font-size: 35px;
-    padding: 3% 0;
-    white-space: nowrap;
-    text-align: center
-}
-
-.contact-body {
-    height: 100%;
-}
-
-.contact-me {
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-}
-
-.contact-me li {
-    margin: auto;
-}
-
-.contact-me a {
-    text-decoration: none;
-    color: var(--secondary-font-color);
-    border:solid;
-    border-color: var(--secondary-border-color);
-    /* font-size: 15px; */
-    padding: 5px 7px;
-    background: var(--heading-color);
-}
 
 /* next to classes center the h2 tag to align with other sections */
 
@@ -221,6 +270,7 @@ nav a:active {
     background-color: var(--secondary-bg-color);
     border: solid;
     border-color: var(--border-color);
+    box-shadow: var(--box-shadow);
 }
 
 /* same as before, helps the h2 tag align with other h2 tags */
@@ -232,6 +282,7 @@ nav a:active {
     background-color: var(--heading-color);
     padding: 1%;
     color: var(--secondary-font-color);
+    text-shadow: var(--secondary-text-shadow);
 
 }
 
