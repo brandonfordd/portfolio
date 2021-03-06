@@ -9,7 +9,7 @@
   --secondary-bg-color: rgb(200, 200, 200);
   --heading-color: #3b483d;
   --box-shadow:  rgba(247, 251, 0, 0.623) 2px 4px 15px 2px;
-  --secondary-box-shadow: none;
+  --secondary-box-shadow: rgba(0, 0, 0, 0.623) 2px 4px 15px 2px;;
   --text-shadow: 0 2px 15px rgb(44, 44, 44);
   --secondary-text-shadow: 0 0 50px rgb(251, 255, 0);
 
@@ -32,7 +32,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Noto Sans JP', sans-serif;
-    box-shadow: ;
 }
 
 html {
@@ -79,7 +78,7 @@ header {
 .nav-container {
   position: absolute;
     right: 2%;
-    bottom: 9px;
+    bottom: -3px;
     height: 45%;
 
 }
@@ -89,7 +88,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    min-width: 600px;
+    /* min-width: 600px; */
     list-style-type: none;
     
 }
@@ -100,7 +99,7 @@ header {
 /* Nav anchor elements */
 .nav-listEl a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     /* font-weight: bold; */
     background: none;
     color: white;
@@ -130,7 +129,7 @@ nav a:active {
 /* Dropdown Button */
 .dropbtn {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     /* font-weight: bold; */
     background: none;
     color: var(--secondary-font-color);
@@ -139,7 +138,7 @@ nav a:active {
   border: none;
   cursor: pointer;
   position: relative;
-  bottom: 7px;
+  bottom: 5px;
   outline: none;
 }
 
@@ -160,7 +159,7 @@ nav a:active {
 .dropdown-content {
   display: none;
   position: absolute;
-  top:37px;
+  top:26px;
   right: -10px;
   background-color: #f1f1f1;
   min-width: 220px;
@@ -266,11 +265,9 @@ nav a:active {
 
 .work-card {
     /* width: 95%; */
-    margin: 1% 5%;
+    margin: 2% 0;
     background-color: var(--secondary-bg-color);
-    border: solid;
-    border-color: var(--border-color);
-    box-shadow: var(--box-shadow);
+
 }
 
 /* same as before, helps the h2 tag align with other h2 tags */
@@ -315,9 +312,10 @@ nav a:active {
 }
 
 .main-list {
-    height: 448px;
-    width:745px;
+    height: 385px;
+    width:650px;
     margin: 1%;
+    box-shadow: var(--secondary-box-shadow);
 }
 
 
@@ -348,8 +346,9 @@ nav a:active {
 .slide-img {
     border: solid;
     border-color: var(--secondary-border-color);
-    width: 366px;
-    height: 220px;
+    width: 300px;
+    height: 190px;
+    box-shadow: var(--secondary-box-shadow);
 }
 
 #margin1 {
@@ -373,7 +372,7 @@ nav a:active {
 .img-title {
     position: absolute;
     color: var(--font-color);
-    font-size: 25px;
+    font-size: 28px;
     background-color: var(--secondary-border-color);
     padding: 3px 5px;
     margin: 15px 3px;
@@ -386,8 +385,8 @@ nav a:active {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    height: 455px;
-    width:745px;
+    height: 390px;
+    width:650px;
     /* justify-content: center; */
     /* margin: 1%; */
 }
@@ -422,10 +421,10 @@ footer {
       font-size: 25px;
     }
 }
-
+/* 
 @media screen and (max-width: 1400px) {
     .img-title {
       font-size: 35px;
     }
-}
+} */
 
