@@ -73,6 +73,12 @@ nav a:hover {
     border-right: 0;
 }
 
+.img-fluid-custom {
+    width: 75%;
+    height: 75%;
+    margin: 0 60px;
+}
+
 .main-card-body {
     height: 160px;
     background-color: var(--secondary-bg-color);
