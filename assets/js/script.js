@@ -17,3 +17,19 @@ window.onclick = function(event) {
     }
   }
 }
+
+// function for dark mode button
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+
+  if (e.target.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+
+}
+//Event listener for the switch to change themes once false
+toggleSwitch.addEventListener('change', switchTheme, false);

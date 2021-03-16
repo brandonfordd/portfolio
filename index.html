@@ -1,215 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark"> 
 
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Brandon Fords Personal Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="shortcut icon" type="image/jpg" href="images/blankfavicon.png"/>
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Brandon Fords Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link rel="shortcut icon" type="image/jpg" href="images/blankfavicon.png"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/reset.css" /> -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body>
+<body class="p-background-color">
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg p-background-color">
+      <a class="navbar-brand p-font-color" href="#">Brandon Ford's Portfolio</a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse custom-toggler" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link p-font-color" href="#about-me">About Me <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-font-color" href="#work">Work</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle p-font-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work List </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a target="_blank" class="dropdown-item" href="https://github.com/brandonfordd/horiseon_refactor">Horiseon Site</a>
+              <div class="dropdown-divider"></div>
+              <a target="_blank" class="dropdown-item" href="https://github.com/brandonfordd/password_generator">Password Generator</a>
+              <div class="dropdown-divider"></div>
+              <a target="_blank" class="dropdown-item" href="https://github.com/brandonfordd/javascript_quiz">Javascript Quiz</a>
+              <div class="dropdown-divider"></div>
+              <a target="_blank" class="dropdown-item" href="https://github.com/brandonfordd/day_planner">Day Planner</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="btn-group-toggle theme-switch" >
+              <label class="btn theme-switch p-primary-color" for="checkbox">
+                <input type="checkbox" checked id="checkbox"> Dark Mode!
+              </label>
+            </div> 
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <header>
+  <div>
+    <div class="headerImg">
+       <img class="img-fluid imgStretch" id="headerImg" src="images/forest_main.jpg" style="width: 100%;">
+    </div>
+    <div class="bottom-right">
+      <div class="row">
+        <p class="q1">while</p> <p class="q2">(noSuccess)</p>
+      </div>
+      <div>
+        <p class="q3">tryAgain();</p>
+      </div>
+      <div class="row">
+        <p class="q4">if</p> <p class="q5">(dead)</p>
+      </div>
+      <div class="row">
+        <p class="q6">break</p> <p class="q7">();</p>
+      </div>
+    </div>
+  </div>
 
-        <div class="header-title">
-
-         <h1>Brandon Ford</h1>
-
+  <main>
+    <div class="jumbotron jumbotron-fluid p-background-color">
+        <div class="container container-fluid">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <img class="img-fluid p-border-color  rounded img-border-width" src="images/me.jpg" alt="placeholder">
+            </div>
+            <div class="col-12 col-md-6">
+              <h1 class="p-primary-color display-4" id="about-me"><ins>About me</ins></h1>
+              <p class="h4 p-font-color">Hello! My name is Brandon Ford and this is my portfolio! I'm born and raised in the Northern Virginia area, which if you guessed it 100% explains the theme of this portfolio, but one of the great things about this area is the wildernest! It goes to pair with one of my favorite activities, hiking, so It's come to be a place I find myself whenever I need to relax or think. Some of my hobbies include gaming, car enthusiast, and as of late coding! I've come to love coding for its ability to problem solve. Problem solving and myself don't necessarily get along. In the sense of, whenever I'm presented with a problem I will not rest until it's solved, otherwise my mind will be leangering on it all day. And coding is problem solving, from an error wrong in the code to using functions to lessen some work, majority of the time we are solving a problem. That is the reason why I feel in love with coding.</p>
+            </div>
+          </div>
         </div>
-        
-
-        <nav class= "nav-container"> 
-
-            <ul class="nav-list">
-
-                <li class="nav-listEl"> 
-                    <a href="#about-me">About Me</a>
-                </li>
-
-                <li class="nav-listEl">
-                    <a href="#work">Work</a>
-                </li>
-                
-                <li class="nav-listEl">
-                    <div>
-                       <a href="#">Resume</a> 
-                    </div>
-                    
-                </li>
-
-                <li class="nav-buttonEl"> 
-
-                    <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn">Contacts</button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a  href="mailto:brandon.ford.617@gmail.com" >Email! 
-                                <i class="fas fa-at"></i>
-                            </a>
-
-                          <a target="_blank" href="https://www.linkedin.com/in/brandon-ford-207a5b157/">LinkIn 
-                            <i class="fa fa-linkedin-square"></i>
-                        </a>
-                          <a target="_blank" href="https://github.com/brandonfordd">GitHub <i class="fa fa-github"></i></a>
-                        </div>
-                    </div>
-
-                </li>
-                
-                
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <img class="center-img" src="images/forest.jpg">
-
-    <main class="container">
-
-        <div class="head-container">
-
-            <section class="about-me-card">
-
-                <div class="about-me-head">
-
-                  <h2 id="about-me">About Me</h2> 
-
-                </div>
-
-                <div class="about-me-body">
-
-                    <img class="about-me-img" src= "images/me.jpg">
-
-                  <p class="about-me-p">Hello! My name is Brandon Ford and this is my portfolio! I'm born and raised in the Northern Virginia area, which if you guessed it 100% explains the theme of this portfolio, but one of the great things about this area is the wildernest! It goes to pair with one of my favorite activities, hiking, so It's come to be a place I find myself whenever I need to relax or think. Some of my hobbies include gaming, car enthusiast, and as of late coding! I've come to love coding for its ability to problem solve. Problem solving and myself don't necessarily get along. In the sense of, whenever I'm presented with a problem I will not rest until it's solved, otherwise my mind will be leangering on it all day. And coding is problem solving, from an error wrong in the code to using functions to lessen some work, majority of the time we are solving a problem. That is the reason why I feel in love with coding.</p>
-                  
-                </div> 
-
-            </section>
-               
+    </div>
+    <div class="container" id="work-body">
+      <h1 class="p-primary-color p-3 display-4" id="work"><ins>My Work!</ins></h1>
+      <div class="card mb-3 img-border-width customCard">
+        <img class="card-img-top main-img-height" src="images/horiseon_site.png" alt="horiseon_site">
+        <div class="card-body main-card-body">
+          <h2 class="card-title"><ins>Horison Site Refractment</ins></h2>
+          <p class="card-text h3">This assignment was to refract a pre-made site called Horison! Below are the links for the GitHub repository and webpage!</p>
+          <div class="text-center">
+            <a target="_blank" href="https://github.com/brandonfordd/horiseon_refactor" class="btn p-btn-color btn-lg active" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
+            <a target="_blank" href="https://brandonfordd.github.io/horiseon_refactor/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+          </div>
         </div>
-
-        <div class="work-container">
-
-            <section class= "work-card">
-
-                <div class="work-head">
-    
-                    <h2  id="work">Work</h2>
-    
-                </div>
-    
-                <div class="work-body">
-    
-                    <ul class="work-list">
-    
-                        <li class= "main-list"> 
-    
-                            <a target="_blank" href="https://github.com/brandonfordd/horiseon_refactor"> 
-    
-                                <div>
-    
-                                    <h3 class="main-img-title">Horison Site Refractor!</h3>
-    
-                                </div>
-    
-                                <img class="main-slide-img" src="images/horiseon_site.png">
-    
-                            </a>
-    
-                        </li>
-    
-                        <li class="sec-list">
-                            
-                            <ul class="box-box">
-    
-                                <li id="margin1">
-    
-                                    <a target="_blank" href="https://github.com/brandonfordd/password_generator"> 
-    
-                                        <div>
-
-                                            <h3 class="img-title">Password Generator!</h3>
-            
-                                            <img class="slide-img" src="images/password_gen.png">
-
-                                        </div>
-                                        
-                                    </a>
-    
-                                </li>
-    
-                                <li id="margin2">
-
-                                    <a href="#"> 
-    
-                                        <div>
-            
-                                            <h3 class="img-title">Under Construction</h3>
-            
-                                            <img class="slide-img" src="images/slide3.jpg">
-            
-                                        </div>  
-            
-                                    </a>
-
-                                </li>
-                                    
-                                <li id="margin3">
-
-                                    <a href="#"> 
-    
-                                        <div>
-            
-                                            <h3 class="img-title">Under Construction</h3>
-            
-                                            <img class="slide-img" src="images/slide4.jpg">
-            
-                                        </div>  
-            
-                                    </a>
-
-                                </li>
-    
-                                <li id="margin4">
-                                    
-                                    <a href="#"> 
-    
-                                        <div>
-            
-                                            <h3 class="img-title">Under Construction</h3>
-            
-                                            <img class="slide-img" src="images/slide5.jpg">
-            
-                                        </div>  
-            
-                                    </a>
-                                </li>
-    
-                            </ul>
-                        </li>
-    
-                    </ul>
-    
-                </div>
-    
-            </section>
-
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col paddingTop">
+          <div class="card h-100 customCard">
+            <img src="images/password_gen.png" class="card-img-top group-img-height" alt="password_generator">
+            <div class="card-body group-card-body d-flex flex-column">
+              <h3 class="card-title"><ins>Password Generator</ins></h3>
+              <p class="card-text h">This is a password generator made with javascript! Below are the links for the GitHub repository and webpage</p>
+              <div class="text-center mt-auto">
+                <a target="_blank" href="https://github.com/brandonfordd/password_generator" class="btn p-btn-color btn-lg active" role="button" aria-pressed="true">GitHub!<i class="fab fa-github-square"></i></a>
+                <a target="_blank" href="https://brandonfordd.github.io/password_generator/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col paddingTop">
+          <div class="card h-100 customCard">
+            <img src="images/javaquiz_screenshot.png" class="card-img-top group-img-height" alt="javascript_quiz">
+            <div class="card-body group-card-body d-flex flex-column">
+              <h3 class="card-title"><ins>Javascript Quiz</ins></h3>
+              <p class="card-text">This is a Javascript Quiz using only javascript! Below are the links for the GitHub repository and webpage</p>
+              <div class="text-center mt-auto">
+                <a target="_blank" href="https://github.com/brandonfordd/javascript_quiz" class="btn p-btn-color btn-lg active" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
+                <a target="_blank" href="https://brandonfordd.github.io/javascript_quiz/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col paddingTop">
+          <div class="card h-100 customCard">
+            <img src="..." class="card-img-top group-img-height" alt="day_planner">
+            <div class="card-body group-card-body d-flex flex-column">
+              <h3 class="card-title"><ins>Day Planner</ins></h3>
+              <p class="card-text">This is a day planner using Javascript and moment.js! Below are the links for the GitHub repository and webpage</p>
+              <div class="text-center mt-auto">
+                <a target="_blank" href="https://github.com/brandonfordd/day_planner" class="btn p-btn-color btn-lg active" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
+                <a target="_blank" href="https://brandonfordd.github.io/day_planner/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col paddingTop">
+          <div class="card h-100 customCard">
+            <img src="images/slide1.jpg" class="card-img-top group-img-height" alt="...">
+            <div class="card-body group-card-body d-flex flex-column">
+              <h3 class="card-title"><ins>Under Construction</ins></h3>
+              <p class="card-text">This is just random words! Below are the links for the GitHub repository and webpage</p>
+              <div class="text-center mt-auto">
+                <a target="_blank" href="#" class="btn p-btn-color btn-lg active" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
+                <a target="_blank" href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-        <script src="assets/js/script.js"></script>
-    </main>
+  <footer class=" p-background-color text-center text-white">
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Google -->
+        <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="mailto:brandon.ford.617@gmail.com" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+    
+        <!-- Instagram -->
+        <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/brandonforddd/" role="button"
+          ><i class="fab fa-instagram"></i></i
+        ></a>
+    
+        <!-- Linkedin -->
+        <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/brandon-ford-207a5b157/" role="button"
+          ><i class="fab fa-linkedin"></i></i
+        ></a>
+    
+        <!-- Github -->
+        <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://github.com/brandonfordd" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <div class="text-center p-3 s-background-color">
+      © 2021 Site created with 💚 by Brandon Ford
+    </div>
+  </footer>
 
-    <footer> 
-
-        Site created with ❤️ by Brandon Ford
-
-    </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 
