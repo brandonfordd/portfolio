@@ -33,3 +33,7 @@ function switchTheme(e) {
 }
 //Event listener for the switch to change themes once false
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+//Setting up the date and appending to the HTML page
+let currentDay = moment();
+$("#currentDay").text(currentDay.format("MMM Do, YYYY"));

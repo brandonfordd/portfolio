@@ -4,4 +4,4 @@ This portfolio was made for a homework assignment. The assignment asked for a po
 Link to Portfolio : https://brandonfordd.github.io/portfolio/
 
 screenshot:
-![alt text](https://github.com/brandonfordd/portfolio/blob/main/images/webpage_screenshot.png?raw=true)
+![alt text](https://github.com/brandonfordd/portfolio/blob/main/images/portfolio_screenshot.png?raw=true)
