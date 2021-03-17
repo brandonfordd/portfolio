@@ -56,11 +56,15 @@ nav a:hover {
 
 .headerTime {
     color: var(--primary-color);
-    margin: 0 45%;
-    text-align: center;
-    position:absolute;
+    margin: -12px 0;
     text-align: center;
     white-space:nowrap;
+    font-size: 15px;
+}
+
+.p-ab {
+    position: absolute;
+    margin: 0 45%;
 }
 
 .custom-toggler .navbar-toggler-icon {

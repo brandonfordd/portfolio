@@ -1,3 +1,11 @@
+//Setting up the date and appending to the HTML page
+function renderTime() {
+  let currentDay = moment();
+  $("#currentDay").text(currentDay.format("LTS"));
+}
+// running renderTime function every 1000 millisecond
+setInterval(renderTime,1000);
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -35,5 +43,9 @@ function switchTheme(e) {
 toggleSwitch.addEventListener('change', switchTheme, false);
 
 //Setting up the date and appending to the HTML page
-let currentDay = moment();
-$("#currentDay").text(currentDay.format("MMM Do, YYYY"));
+function renderTime() {
+  let currentDay = moment();
+  $("#currentDay").text(currentDay.format("LTS"));
+}
+// running renderTime function every 1000 millisecond
+setInterval(renderTime,1000);
