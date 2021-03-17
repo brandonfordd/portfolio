@@ -62,8 +62,13 @@ nav a:hover {
     font-size: 15px;
 }
 
+.noWrap {
+    white-space:nowrap;
+}
+
 .p-ab {
     position: absolute;
+    top: 20px;
     margin: 0 45%;
 }
 
@@ -96,12 +101,14 @@ nav a:hover {
     height: 160px;
     background-color: var(--secondary-bg-color);
     color: var(--secondary-font-color);
+    padding-bottom: 2px;
 }
 
 .group-card-body {
     height: 170px;
     background-color: var(--secondary-bg-color);
     color: var(--secondary-font-color);
+    padding-bottom: 2px;
 }
 
 .group-img-height {
@@ -162,6 +169,22 @@ nav a:hover {
 
 .customCard:hover {
     outline-width: 10px;
+}
+
+.custom-length-pm {
+    width: 70%;
+}
+
+.custom-length-sm {
+    width: 29%;
+}
+
+.custom-length-ps {
+    width: 68%;
+}
+
+.custom-length-ss {
+    width: 30%;
 }
 
 @media screen and (max-width: 772px) {
