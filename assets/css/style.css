@@ -54,24 +54,30 @@ nav a:hover {
     color: var(--primary-color);
 }
 
-.headerTime {
+/* current time in header */
+#currentDay {
+    position: relative;
+    bottom: -5px;
     color: var(--primary-color);
-    margin: -12px 0;
-    text-align: center;
+    margin: 0;
+    text-align: ;
     white-space:nowrap;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .noWrap {
     white-space:nowrap;
 }
 
-.p-ab {
-    position: absolute;
-    top: 20px;
-    margin: 0 45%;
+.nav-brand-custom {
+    margin-right: 4px;
 }
 
+/* row margin none */
+.row-mn {
+    margin-left: 0;
+    margin-right: 0;
+}
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(102, 255, 184)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
@@ -211,9 +217,6 @@ nav a:hover {
     }
 }
 
-@media screen and (max-width: 990px) and (min-width: 767px) {
-
-}
 
 @media screen and (max-width: 470px) {
     .quote p {

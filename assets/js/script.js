@@ -42,10 +42,3 @@ function switchTheme(e) {
 //Event listener for the switch to change themes once false
 toggleSwitch.addEventListener('change', switchTheme, false);
 
-//Setting up the date and appending to the HTML page
-function renderTime() {
-  let currentDay = moment();
-  $("#currentDay").text(currentDay.format("LTS"));
-}
-// running renderTime function every 1000 millisecond
-setInterval(renderTime,1000);
