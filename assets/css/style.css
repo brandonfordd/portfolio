@@ -65,6 +65,10 @@ nav a:hover {
     font-size: 13px;
 }
 
+.theme-text {
+    height: 7px;
+}
+
 .noWrap {
     white-space:nowrap;
 }
@@ -129,7 +133,7 @@ nav a:hover {
 .bottom-right {
     position: absolute;
     top: 50px;
-    right: 16px;
+    right: 30px;
 }
 
 .q1 {
@@ -138,7 +142,7 @@ nav a:hover {
 }
 
 .q2 {
-    color:rgb(109, 109, 109);
+    color:white;
     font-size: 30px;
 }
 
@@ -243,4 +247,79 @@ footer {
     .quote p {
         font-size: 16px;
     }
+}
+
+/* swing effect */
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.swing {
+    -webkit-animation: swing 6s ease;
+    animation: swing 6s ease;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }

@@ -1,11 +1,3 @@
-//Setting up the date and appending to the HTML page
-function renderTime() {
-  let currentDay = moment();
-  $("#currentDay").text(currentDay.format("LTS"));
-}
-// running renderTime function every 1000 millisecond
-setInterval(renderTime,1000);
-
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -29,12 +21,15 @@ window.onclick = function(event) {
 // function for dark mode button
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
+
 function switchTheme(e) {
 
   if (e.target.checked) {
+    $(".theme-text").text("Light mode!")
     document.documentElement.setAttribute('data-theme', 'dark');
   }
   else {
+    $(".theme-text").text("Dark mode!")
     document.documentElement.setAttribute('data-theme', 'light');
   }
 
