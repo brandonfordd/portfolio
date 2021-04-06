@@ -116,6 +116,10 @@ nav a:hover {
     border: none;
 }
 
+.card-footer {
+    background-color:var(--secondary-bg-color); ;
+    border: none;
+}
 .bottom-right {
     position: absolute;
     top: 50px;
@@ -168,7 +172,8 @@ nav a:hover {
 }
 
 .customCard:hover {
-    outline-width: 10px;
+    outline-width: 8px;
+    outline-color: rgb(238, 255, 0) ;
 }
 
 .custom-length-pm {
@@ -180,7 +185,7 @@ nav a:hover {
 }
 
 .custom-length-ps {
-    width: 68%;
+    width: 66%;
 }
 
 .custom-length-ss {
