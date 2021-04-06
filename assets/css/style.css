@@ -227,13 +227,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 430px) {
     .quote p {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
     .quote p {
         font-size: 18px;
     }
