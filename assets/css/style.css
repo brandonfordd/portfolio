@@ -98,21 +98,21 @@ nav a:hover {
 }
 
 .main-card-body {
-    height: 160px;
+    /* height: 160px; */
     background-color: var(--secondary-bg-color);
     color: var(--secondary-font-color);
     padding-bottom: 2px;
 }
 
 .group-card-body {
-    height: 170px;
+    /* height: ;  */
     background-color: var(--secondary-bg-color);
     color: var(--secondary-font-color);
     padding-bottom: 2px;
 }
 
 .group-img-height {
-    height: 170px;
+    /* height: 200px; */
     border: none;
 }
 
@@ -189,13 +189,13 @@ nav a:hover {
 
 @media screen and (max-width: 772px) {
     .main-card-body {
-        height: 185px;
+        /* height: 185px; */
     }
 }
 
 @media screen and (max-width: 530px) {
     .main-card-body {
-        height: 185px;
+        /* height: 185px; */
     }
 }
 
@@ -207,19 +207,17 @@ nav a:hover {
 }
 
 @media screen and (max-width: 990px) and (min-width: 767px) {
-    .group-card-body {
-        height: 185px;
+
+}
+
+@media screen and (max-width: 470px) {
+    .quote p {
+        font-size: 25px;
     }
 }
 
-@media screen and (max-width: 767px) {
-    .group-card-body {
-        height: 150px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .group-img-height {
-        height: 290px;
+@media screen and (max-width: 410px) {
+    .quote p {
+        font-size: 20px;
     }
 }
