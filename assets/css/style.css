@@ -198,9 +198,12 @@ nav a:hover {
     width: 30%;
 }
 
-@media screen and (max-width: 772px) {
-    .main-card-body {
-        /* height: 185px; */
+footer {
+    margin-top: 50px;
+}
+@media screen and (max-width: 845px) {
+    .main-card-body p{
+        font-size: 12px;
     }
 }
 
