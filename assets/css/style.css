@@ -5,13 +5,14 @@
     --secondary-font-color:rgb(212, 212, 212);
     --border-color: #00752d;
     --secondary-border-color:#292b2c;
-    --bg-color: #c0cebf;
+    --bg-color: #d1d1d1;
     --secondary-bg-color: #292b2c;
     --box-shadow:  0 0 20px #00000086;
 }
   
 [data-theme="dark"] {
     --primary-color: #3fca95;
+    --secondary-color: rgb(255, 217, 0);
     --font-color: #f2fff8;
     --secondary-font-color:#000000;
     --border-color: #51fcba;
@@ -24,6 +25,11 @@
 .p-border-color {
     border: solid;
    color: var(--border-color);
+}
+
+
+.p-outline {
+    border-color:var(--primary-color);
 }
 
 .p-background-color {
@@ -45,13 +51,20 @@
 .p-primary-color {
     color: var(--primary-color);
 }
+.p-secondary-color {
+    color: var(--secondary-color);
+}
+
+.m-lc {
+    margin-left: 0px;
+}
 
 nav {
     box-shadow:var(--box-shadow) ;
 }
 
 nav a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* current time in header */
@@ -182,8 +195,8 @@ nav a:hover {
 }
 
 .customCard:hover {
-    outline-width: 8px;
-    outline-color: rgb(238, 255, 0) ;
+    outline-width: 7px;
+    outline-color: var(--secondary-color) ;
 }
 
 .custom-length-pm {
@@ -202,9 +215,14 @@ nav a:hover {
     width: 29%;
 }
 
+.textS {
+    text-shadow: 2px 1px 1px var(--secondary-color);
+}
+
 footer {
     margin-top: 50px;
 }
+
 @media screen and (max-width: 845px) {
     .main-card-body p{
         font-size: 12px;
@@ -224,6 +242,11 @@ footer {
     }
 }
 
+@media screen and (max-width: 990px) {
+    .m-lc {
+        margin-left: 10px;
+    }
+}
 
 @media screen and (max-width: 470px) {
     .quote p {
@@ -322,4 +345,20 @@ footer {
     animation: swing 6s ease;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+}
+
+.refract {
+    color: rgb(0, 110, 255);
+}
+.javascript {
+    color:rgb(255, 31, 31);
+}
+.moment {
+    color:rgb(255, 128, 128);
+}
+.css {
+    color: green;
+}
+.html {
+    color: rgb(25, 25, 255);
 }
