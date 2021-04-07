@@ -1,6 +1,6 @@
-# 02 Advanced CSS: Portfolio
+# Advanced CSS: Portfolio
 
-## Your Task
+## The Task
 
 Welcome to this week's homework! This is an even-numbered week, so you won't be given any starter code. Instead, you'll create a web application from scratch! This week, you'll build a portfolio page, which you can add to as the course progresses. 
 
@@ -15,7 +15,7 @@ Let’s take a look at what a user story written from the perspective of a hirin
 
 ## User Story
 
-```
+```md
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
@@ -26,7 +26,7 @@ SO THAT I can review samples of their work and assess whether they're a good can
 
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
-```
+```md
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo, and links to sections about them, their work, and how to contact them
