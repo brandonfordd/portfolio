@@ -46,8 +46,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Screenshots
 
-1.
-![alt text](https://github.com/brandonfordd/portfolio/blob/main/images/screenshot-1.png?raw=true)
+1. Desktop Ui
+![alt text](https://github.com/brandonfordd/portfolio/blob/main/assets/images/screenshot-1.png)
 
-2.
-![alt text](https://github.com/brandonfordd/portfolio/blob/main/images/screenshot-2.png?raw=true)
+2. Mobile Ui
+![alt text](https://github.com/brandonfordd/portfolio/blob/main/assets/images/screenshot-2.png)
