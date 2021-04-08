@@ -1,12 +1,13 @@
 /* colors */
 :root {
-    --primary-color: #00752d;
+    --primary-color: #00a53f;
+    --secondary-color: rgb(255, 196, 0);
     --font-color: #1f1f1f;
-    --secondary-font-color:rgb(212, 212, 212);
-    --border-color: #00752d;
+    --secondary-font-color:rgb(228, 228, 228);
+    --border-color: #009e3d;
     --secondary-border-color:#292b2c;
     --bg-color: #d1d1d1;
-    --secondary-bg-color: #292b2c;
+    --secondary-bg-color: rgb(53, 53, 53);
     --box-shadow:  0 0 20px #00000086;
 }
   
@@ -67,16 +68,6 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-/* current time in header */
-#currentDay {
-    position: relative;
-    bottom: -5px;
-    color: var(--primary-color);
-    margin: 0;
-    text-align: ;
-    white-space:nowrap;
-    font-size: 13px;
-}
 
 .theme-text {
     height: 7px;
@@ -103,15 +94,14 @@ nav a:hover {
     border-color: var(--primary-color);
 } 
 
+.custom-toggler.navbar-toggler:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
 
 .theme-switch:hover {
     color:var(--secondary-font-color);
     background: var(--primary-color);
-}
-
-.img-border-width {
-    border-width: 3px !important;
-    border-right: 0;
 }
 
 .img-fluid-custom {
@@ -150,7 +140,7 @@ nav a:hover {
 }
 
 .q1 {
-    color: yellow;
+    color: var(--secondary-color);
     font-size: 30px;
 }
 
@@ -165,7 +155,7 @@ nav a:hover {
 }
 
 .q4 {
-    color:yellow;
+    color:var(--secondary-color);
     font-size: 30px;
 }
 
@@ -175,7 +165,7 @@ nav a:hover {
 }
 
 .q6 {
-    color:yellow;
+    color:var(--secondary-color);
     font-size: 30px;
 }
 
@@ -188,15 +178,35 @@ nav a:hover {
     padding-top: 20px;
 }
 
+.img-border-width {
+    border-right: none;
+}
+
+/* compiled css for css transitions */
+  
+@keyframes animated-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 186, 5, 0.671);
+  }
+  100% {
+     box-shadow: 0 0 25px 10px rgba(255,255,255,0);
+  }
+}
+
+
 .customCard {
-    outline: solid 5px  var(--border-color);;
-    transition: outline 0.6s linear;
-    border: none;
+
+    border:solid 2px var(--border-color);
+    outline: none;
+    background-color: var(--border-color);
+    border-radius: 3px;
+    box-shadow: none;
 }
 
 .customCard:hover {
-    outline-width: 7px;
-    outline-color: var(--secondary-color) ;
+animation: animated-border 1.5s infinite;
+border-color: var(--secondary-color);
+background-color: var(--secondary-color);
 }
 
 .custom-length-pm {
@@ -216,7 +226,12 @@ nav a:hover {
 }
 
 .textS {
-    text-shadow: 2px 1px 1px var(--secondary-color);
+    text-shadow: 2px 1px 0px var(--secondary-color);
+}
+
+#about-me h1 {
+    margin-left: 3%;
+    margin-top: 10px;
 }
 
 footer {
@@ -269,6 +284,18 @@ footer {
 @media screen and (max-width: 345px) {
     .quote p {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 326px) {
+    .quote p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 295px) {
+    .quote p {
+        font-size: 10px;
     }
 }
 
@@ -362,3 +389,5 @@ footer {
 .html {
     color: rgb(25, 25, 255);
 }
+
+
