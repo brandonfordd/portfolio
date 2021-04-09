@@ -24,7 +24,7 @@
 <body class="p-background-color ">
   <header>
     <nav class="navbar fixed-top navbar-expand-lg p-background-color">
-      <a class="navbar-brand p-font-color nav-brand-custom swing " href="#">Brandon Ford's Portfolio</a>
+      <a class="navbar-brand p-font-color nav-brand-custom swing linear-wipe" href="#">Brandon Ford's Portfolio</a>
       <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -86,20 +86,127 @@
 
   <main>
     <div class="jumbotron jumbotron-fluid p-background-color" id="about-me">
-        <div class="container container-fluid">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-6 customPM">
-              <img class="img-fluid p-border-color img-fluid-custom rounded img-border-width" src="assets/images/me.jpg" alt="placeholder">
+      <div class="container container-fluid">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 customPM">
+            <img class="img-fluid p-border-color img-fluid-custom rounded img-border-width"src="assets/images/me.jpg" alt="placeholder">
+          </div>
+          <div class="col-12 col-md-6">
+            <h1 class="p-primary-color display-4 textS"><i class="far fa-address-card"></i> About me</h1>
+            <hr>
+            <p class="h4 p-font-color lead">Hello! My name is Brandon Ford and this is myportfolio! I'm born and raised in the Northern Virginia area, which if you guessedit 100% explains the theme of this portfolio, but one of the great things about thisarea is the wildernest! It goes to pair with one of my favorite activities, hiking,so It's come to be a place I find myself whenever I need to relax or think. Some ofmy hobbies include gaming, car enthusiast, and as of late coding! I've come to lovecoding for its ability to problem solve. Problem solving and myself don'tnecessarily get along. In the sense of, whenever I'm presented with a problem I willnot rest until it's solved, otherwise my mind will be leangering on it all day. Andcoding is problem solving, from an error wrong in the code to using functions tolessen some work, majority of the time we are solving a problem. That is the reasonwhy I feel in love with coding.</p>
+            <hr>
+            <h3 class="p-primary-color resumeT text-center">Resume</h3>
+            <div class="container resumeBtnC">
+              <a type="button" class="btn p-btn-color btn-lg resumeDBtn noWrap" href="assets/downloads/brandonford_resume.pdf"download  >Download Resume <i class="fas fa-download"></i></a>
+              <a type="button" target="_black" class="btn btn-secondary btn-lg resumePBtn noWrap" href="assets/downloadsbrandonford_resume.pdf" >Preview Resume <i class="far fa-file-pdf"></i></a>
             </div>
-            <div class="col-12 col-md-6">
-              <h1 class="p-primary-color display-4 textS"><i class="far fa-address-card"></i> <ins>About me</ins></h1>
-              <p class="h4 p-font-color lead">Hello! My name is Brandon Ford and this is my portfolio! I'm born and raised in the Northern Virginia area, which if you guessed it 100% explains the theme of this portfolio, but one of the great things about this area is the wildernest! It goes to pair with one of my favorite activities, hiking, so It's come to be a place I find myself whenever I need to relax or think. Some of my hobbies include gaming, car enthusiast, and as of late coding! I've come to love coding for its ability to problem solve. Problem solving and myself don't necessarily get along. In the sense of, whenever I'm presented with a problem I will not rest until it's solved, otherwise my mind will be leangering on it all day. And coding is problem solving, from an error wrong in the code to using functions to lessen some work, majority of the time we are solving a problem. That is the reason why I feel in love with coding.</p>
-            </div>
+            <hr>
           </div>
         </div>
+      </div>
     </div>
+
+    <div class="container d-flex ">
+      <h1 class="p-primary-color display-4 textS skillsT container">
+        Skills
+        <i id="gear1" class="fa fa-5x fa-gear spin p-primary-color"></i>
+        <i id="gear2" class="fa fa-5x fa-gear spin-back p-secondary-color"></i>
+        <i id="gear3" class="fa fa-5x fa-gear spin-back p-secondary-color"></i>        
+      </h1>   
+    </div>
+    <div class="container skillsWrapper">
+      <hr>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="skillbar" data-percent="70%">
+            <div class="skillbar-title noWrap">Front End Development</div>
+            <div class="skill-bar-percent">70%</div>
+            <div class="skillbar-bar" style="width: 70%; background-color: rgb(255, 50, 50); animation: animated-borderSkillC 1.5s infinite;"></div>
+          </div>
+          <div class="skillbar" data-percent="95%">
+            <div class="skillbar-title">HTML</div>
+            <div class="skill-bar-percent">95%</div>
+            <div class="skillbar-bar" style="width: 95%"></div>
+          </div>
+          <div class="skillbar" data-percent="90%">
+            <div class="skillbar-title">CSS</div>
+            <div class="skill-bar-percent">90%</div>
+            <div class="skillbar-bar" style="width: 90%"></div>
+          </div>
+          <div class="skillbar" data-percent="50%">
+            <div class="skillbar-title">JavaScript</div>
+            <div class="skill-bar-percent">50%</div>
+            <div class="skillbar-bar" style="width: 50%"></div>
+          </div>
+          <div class="skillbar" data-percent="0%">
+            <div class="skillbar-title">React</div>
+            <div class="skill-bar-percent">0%</div>
+            <div class="skillbar-bar" style="width: 0%"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="skillbar" data-percent="30%">
+            <div class="skillbar-title noWrap">Back End Development</div>
+            <div class="skill-bar-percent">30%</div>
+            <div class="skillbar-bar" style="width: 30%; background-color: rgb(255, 50, 50); animation: animated-borderSkillC 1.5s infinite;"></div>
+          </div>
+          <div class="skillbar" data-percent="20%">
+            <div class="skillbar-title">Database</div>
+            <div class="skill-bar-percent">20%</div>
+            <div class="skillbar-bar" style="width: 20%"></div>
+          </div>
+          <div class="skillbar" data-percent="90%">
+            <div class="skillbar-title">APIs</div>
+            <div class="skill-bar-percent">90%</div>
+            <div class="skillbar-bar" style="width: 90%"></div>
+          </div>
+          <div class="skillbar" data-percent="20%">
+            <div class="skillbar-title">Servers</div>
+            <div class="skill-bar-percent">20%</div>
+            <div class="skillbar-bar" style="width: 20%"></div>
+          </div>
+          <div class="skillbar" data-percent="10%">
+            <div class="skillbar-title">Network</div>
+            <div class="skill-bar-percent">10%</div>
+            <div class="skillbar-bar" style="width: 10%"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="skillbar" data-percent="90%">
+            <div class="skillbar-title noWrap">Software Development Life Cycle</div>
+            <div class="skill-bar-percent">90%</div>
+            <div class="skillbar-bar" style="width: 90%; background-color: rgb(255, 50, 50); animation: animated-borderSkillC 1.5s infinite;"></div>
+          </div>
+          <div class="skillbar" data-percent="95%">
+            <div class="skillbar-title">Development</div>
+            <div class="skill-bar-percent">95%</div>
+            <div class="skillbar-bar" style="width: 95%"></div>
+          </div>
+          <div class="skillbar" data-percent="90%">
+            <div class="skillbar-title">Testing</div>
+            <div class="skill-bar-percent">90%</div>
+            <div class="skillbar-bar" style="width: 90%"></div>
+          </div>
+          <div class="skillbar" data-percent="80%">
+            <div class="skillbar-title">Analysis</div>
+            <div class="skill-bar-percent">80%</div>
+            <div class="skillbar-bar" style="width: 80%"></div>
+          </div>
+          <div class="skillbar" data-percent="90%">
+            <div class="skillbar-title">Deployment</div>
+            <div class="skill-bar-percent">90%</div>
+            <div class="skillbar-bar" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  
+
     <div class="container work-body" id="work">
-      <h1 class="p-primary-color p-3 display-4 textS"><ins>Projects<i class="fas fa-project-diagram"></i></ins></h1>
+      <h1 class="p-primary-color display-4 textS"><i class="fas fa-project-diagram"></i> Projects</h1>
+      <hr>
       <div class="card mb-3 customCard">
         <img class="card-img-top main-img-height" src="assets/images/screenshot-movienight.png" alt="moivenightdoneright">
         <div class="card-body main-card-body d-flex flex-column">
@@ -108,8 +215,8 @@
         </div>
         <div class="card-footer">
           <div class="text-center mt-auto">
-            <a target="_blank" href="https://github.com/AustinJoo97/MovieNightDoneRight" class="btn p-btn-color btn-lg active custom-length-pm" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
-            <a target="_blank" href="https://austinjoo97.github.io/MovieNightDoneRight/" class="btn btn-secondary btn-lg active custom-length-sm" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+            <a target="_blank" href="https://github.com/AustinJoo97/MovieNightDoneRight" class="btn p-btn-color btn-lg  custom-length-pm" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
+            <a target="_blank" href="https://austinjoo97.github.io/MovieNightDoneRight/" class="btn btn-secondary btn-lg  custom-length-sm" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
           </div>
         </div>
       </div>
@@ -123,8 +230,8 @@
             </div>
             <div class="card-footer">
               <div class="text-center mt-auto">
-                <a target="_blank" href="https://github.com/brandonfordd/weather_app" class="btn p-btn-color btn-lg active custom-length-ps" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
-                <a target="_blank" href="https://brandonfordd.github.io/weather_app/" class="btn btn-secondary btn-lg active custom-length-ss" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+                <a target="_blank" href="https://github.com/brandonfordd/weather_app" class="btn p-btn-color btn-lg custom-length-ps" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
+                <a target="_blank" href="https://brandonfordd.github.io/weather_app/" class="btn btn-secondary btn-lg custom-length-ss" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
               </div>
             </div>
           </div>
@@ -138,8 +245,8 @@
             </div>
             <div class="card-footer">
               <div class="text-center mt-auto">
-                <a target="_blank" href="https://github.com/brandonfordd/password_generator" class="btn p-btn-color btn-lg active custom-length-ps" role="button" aria-pressed="true">GitHub!<i class="fab fa-github-square"></i></a>
-                <a target="_blank" href="https://brandonfordd.github.io/password_generator/" class="btn btn-secondary btn-lg active custom-length-ss" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+                <a target="_blank" href="https://github.com/brandonfordd/password_generator" class="btn p-btn-color btn-lg custom-length-ps" role="button" aria-pressed="true">GitHub!<i class="fab fa-github-square"></i></a>
+                <a target="_blank" href="https://brandonfordd.github.io/password_generator/" class="btn btn-secondary btn-lg  custom-length-ss" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
               </div>
             </div>
           </div>
@@ -153,8 +260,8 @@
             </div>
             <div class="card-footer">
               <div class="text-center mt-auto">
-                <a target="_blank" href="https://github.com/brandonfordd/javascript_quiz" class="btn p-btn-color btn-lg active custom-length-ps" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
-                <a target="_blank" href="https://brandonfordd.github.io/javascript_quiz/" class="btn btn-secondary btn-lg active custom-length-ss" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+                <a target="_blank" href="https://github.com/brandonfordd/javascript_quiz" class="btn p-btn-color btn-lg custom-length-ps" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
+                <a target="_blank" href="https://brandonfordd.github.io/javascript_quiz/" class="btn btn-secondary btn-lg custom-length-ss" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
               </div>
             </div>
           </div>
@@ -168,8 +275,8 @@
             </div>
             <div class="card-footer">
               <div class="text-center mt-auto">
-                <a target="_blank" href="https://github.com/brandonfordd/day_planner" class="btn p-btn-color btn-lg active custom-length-ps" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
-                <a target="_blank" href="https://brandonfordd.github.io/day_planner/" class="btn btn-secondary btn-lg active custom-length-ss" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+                <a target="_blank" href="https://github.com/brandonfordd/day_planner" class="btn p-btn-color btn-lg custom-length-ps" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
+                <a target="_blank" href="https://brandonfordd.github.io/day_planner/" class="btn btn-secondary btn-lg custom-length-ss" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
               </div>
             </div>
           </div>
@@ -183,13 +290,14 @@
             </div>
             <div class="card-footer">
               <div class="text-center mt-auto">
-                <a target="_blank" href="https://github.com/brandonfordd/horiseon_refactor" class="btn p-btn-color btn-lg active custom-length-ps" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
-                <a target="_blank" href="https://brandonfordd.github.io/horiseon_refactor/" class="btn btn-secondary btn-lg active custom-length-ss" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
+                <a target="_blank" href="https://github.com/brandonfordd/horiseon_refactor" class="btn p-btn-color btn-lg custom-length-ps" role="button" aria-pressed="true">GitHub! <i class="fab fa-github-square"></i></a>
+                <a target="_blank" href="https://brandonfordd.github.io/horiseon_refactor/" class="btn btn-secondary btn-lg custom-length-ss" role="button" aria-pressed="true"><i class="fas fa-window-maximize"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <hr>
     </div>
   </main>
 
@@ -215,11 +323,6 @@
         <!-- Google -->
         <a target="_blank" class="btn btn-outline-light btn-floating m-1 p-secondary-color p-outline s-background-color" href="mailto:brandon.ford.617@gmail.com" role="button"
           ><i class="fab fa-google"></i
-        ></a>
-  
-        <!-- Resume pdf -->
-        <a target="_blank" class="btn btn-outline-light btn-floating m-1 p-outline s-background-color" href="assets/downloads/brandonford_resume.pdf" download      role="button"
-          ><i class="far fa-file p-secondary-color"></i> Resume Pdf!</i
         ></a>
       </section>
       <!-- Section: Social media -->

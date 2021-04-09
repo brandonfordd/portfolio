@@ -1,6 +1,7 @@
 /* colors */
 :root {
     --primary-color: #00a53f;
+    --primary-colorD: #00a53f86;
     --secondary-color: rgb(255, 196, 0);
     --font-color: #1f1f1f;
     --secondary-font-color:rgb(228, 228, 228);
@@ -13,6 +14,7 @@
   
 [data-theme="dark"] {
     --primary-color: #3fca95;
+    --primary-colorD: #00bd74;
     --secondary-color: rgb(255, 217, 0);
     --font-color: #f2fff8;
     --secondary-font-color:#000000;
@@ -39,6 +41,9 @@
 
 .p-btn-color {
     background-color: var(--primary-color);
+}
+.p-btn-color:hover {
+    background-color: var(--primary-colorD);
 }
 
 .s-background-color {
@@ -86,9 +91,10 @@ nav a:hover {
     margin-left: 0;
     margin-right: 0;
 }
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(102, 255, 184)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
+}
   
 .custom-toggler.navbar-toggler {
     border-color: var(--primary-color);
@@ -108,6 +114,34 @@ nav a:hover {
     width: 75%;
     height: 75%;
     margin: 0 10%;
+}
+
+
+.resumeBtnC {
+    display:flex;
+    justify-content: center;
+}
+
+.resumeDBtn {
+    margin: 10px;
+}
+
+.resumePBtn {
+    margin: 10px;
+}
+
+.resumeT {
+    margin: 0;
+}
+
+#about-me {
+    padding-bottom: 0;
+    margin-bottom: 1%;
+}
+
+#about-me h1 {
+    margin-left: 3%;
+    margin-top: 10px;
 }
 
 .main-card-body {
@@ -180,6 +214,7 @@ nav a:hover {
 
 .img-border-width {
     border-right: none;
+    cursor: none;
 }
 
 /* compiled css for css transitions */
@@ -195,7 +230,6 @@ nav a:hover {
 
 
 .customCard {
-
     border:solid 2px var(--border-color);
     outline: none;
     background-color: var(--border-color);
@@ -229,74 +263,8 @@ background-color: var(--secondary-color);
     text-shadow: 2px 1px 0px var(--secondary-color);
 }
 
-#about-me h1 {
-    margin-left: 3%;
-    margin-top: 10px;
-}
-
 footer {
     margin-top: 50px;
-}
-
-@media screen and (max-width: 845px) {
-    .main-card-body p{
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 530px) {
-    .main-card-body {
-        /* height: 185px; */
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .headerImg {
-        height: 300px;
-        overflow: hidden;
-    }
-}
-
-@media screen and (max-width: 990px) {
-    .m-lc {
-        margin-left: 10px;
-    }
-}
-
-@media screen and (max-width: 470px) {
-    .quote p {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .quote p {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .quote p {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 345px) {
-    .quote p {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 326px) {
-    .quote p {
-        font-size: 13px;
-    }
-}
-
-@media screen and (max-width: 295px) {
-    .quote p {
-        font-size: 10px;
-    }
 }
 
 /* swing effect */
@@ -390,4 +358,247 @@ footer {
     color: rgb(25, 25, 255);
 }
 
+/*gradient text colors */
+.linear-wipe {
+  /* text-align: center; */
+  
+  background: linear-gradient(to right, #3fca95 20%, white 40%,white 60%, #3fca95 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 10s linear infinite;
+ @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+}
 
+/* responsive skill bar properties */
+
+@keyframes animated-borderSkills {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255, 187, 0);
+  }
+  100% {
+     box-shadow: 0 0 20px 2px rgba(255,255,255,0);
+  }
+}
+
+@keyframes animated-borderSkillC {
+    0% {
+      box-shadow: 0 0 0 0 rgb(250, 38, 38);
+    }
+    100% {
+       box-shadow: 0 0 20px 2px rgba(255,255,255,0);
+    }
+  }
+
+  
+.skillsWrapper {
+     /* margin: 0 auto; */
+     margin-bottom: 100px;
+     margin-top: 20px;
+     padding: 0 50px;
+}
+
+.skillsT {
+    text-align: center;
+    padding: 0;
+    margin:0;
+    margin-top: 60px;
+}
+
+.skillbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.skillbar-bar:before {
+  background: #111;
+  content: "";
+  height: 3px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.skillbar-bar {
+  height: 3px;
+  width: 0px;
+  background: rgb(255, 187, 0);
+  animation: animated-borderSkills 1.5s infinite;
+  transition-property: width, background-color;
+}
+
+.skillbar-title {
+  color: var(--font-color);
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.skill-bar-percent {
+  float: right;
+  display: inline-block;
+  color: var(--font-color);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid var(--primary-colorD);
+}
+
+/* spinning cog wheel */
+#gear1, #gear2, #gear3 {
+    color: var(--primary-color);
+    /* display: block; */
+    float: right;
+    position: absolute;
+    font-size: 20px;
+    text-shadow: none;
+}
+            
+#gear1 {
+    font-size: 40px;
+   margin-left: 5px;
+   margin-top: 7px;
+   color: var(--primary-color);
+}
+            
+#gear2 {
+    margin-left: 45px;
+    margin-top: 5px;
+    color: var(--secondary-color);
+}
+
+#gear3 {
+    margin-left: 45px;
+    margin-top: 28px;
+    color: var(--secondary-color);
+}
+
+.spin {
+    -webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
+}
+
+.spin-back {
+    -webkit-animation:spin-back 15s linear infinite;
+    -moz-animation:spin-back 15s linear infinite;
+    animation:spin-back 15s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-moz-keyframes spin-back { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin-back { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin-back { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+
+@media screen and (max-width: 845px) {
+    .main-card-body p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main-card-body {
+        /* height: 185px; */
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .headerImg {
+        height: 300px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .m-lc {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .quote p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .quote p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .quote p {
+        font-size: 18px;
+    }
+    .resumeDBtn {
+        width: 50%;
+        font-size: 10px;
+    }
+    .resumePBtn {
+        width: 50%;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .quote p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 326px) {
+    .quote p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 295px) {
+    .quote p {
+        font-size: 10px;
+    }
+    .resumeDBtn {
+        width: 60%;
+        font-size: 6px;
+    }
+    .resumePBtn {
+        width: 60%;
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .resumeT {
+        margin-top: 60px;
+    }
+    .resumeBtnC {
+        margin-bottom: 60px;
+    }
+}
