@@ -598,7 +598,11 @@ hr {
     .resumeT {
         margin-top: 60px;
     }
-    .resumeBtnC {
-        margin-bottom: 60px;
+ 
+    #about-me {
+        margin-top: 20px;
+    }
+    #about-me h1 {
+        margin-top: 40px;
     }
 }
