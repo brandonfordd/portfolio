@@ -104,6 +104,10 @@ nav a:hover {
     outline: none;
     border-color: var(--secondary-color);
 }
+.custom-toggler.navbar-toggler:hover {
+    outline: none;
+    border-color: var(--secondary-color);
+}
 
 .theme-switch:hover {
     color:var(--secondary-font-color);
