@@ -585,12 +585,18 @@ hr {
         font-size: 10px;
     }
     .resumeDBtn {
-        width: 60%;
-        font-size: 6px;
+        width: 70%;
+        font-size: 2px;
     }
     .resumePBtn {
-        width: 60%;
-        font-size: 6px;
+        width: 65%;
+        font-size: 2px;
+    }
+}
+
+@media screen and (max-width: 261px) {
+    .quote p {
+        font-size: 1px !important;
     }
 }
 
