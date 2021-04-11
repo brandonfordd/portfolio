@@ -8,7 +8,7 @@
 HTML5
 CSS3
 Javascript
-Boottrap
+Bootstrap
 Jquery
 ```
 
@@ -45,8 +45,6 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
-## Deployed Application 
- https://brandonfordd.github.io/portfolio/
 
 ## Screenshots
 
