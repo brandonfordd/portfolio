@@ -2,7 +2,7 @@
 :root {
     --primary-color: #00a53f;
     --primary-colorD: #00a53f86;
-    --secondary-color: rgb(255, 196, 0);
+    --secondary-color: rgb(255, 174, 0);
     --font-color: #1f1f1f;
     --secondary-font-color:rgb(228, 228, 228);
     --border-color: #009e3d;
@@ -15,9 +15,9 @@
 [data-theme="dark"] {
     --primary-color: #3fca95;
     --primary-colorD: #00bd74;
-    --secondary-color: rgb(255, 217, 0);
+    --secondary-color: rgb(255, 196, 0);
     --font-color: #f2fff8;
-    --secondary-font-color:#000000;
+    --secondary-font-color:#313131;
     --border-color: #51fcba;
     --secondary-border-color: rgb(37, 37, 37);
     --bg-color: #292b2c;
@@ -366,7 +366,7 @@ footer {
 .linear-wipe {
   /* text-align: center; */
   
-  background: linear-gradient(to right, #3fca95 20%, white 40%,white 60%, #3fca95 80%);
+  background: linear-gradient(to right, var(--primary-color) 20%, var(--font-color) 40%,var(--font-color) 60%, var(--primary-color) 80%);
   background-size: 200% auto;
   
   color: #000;
