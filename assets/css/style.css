@@ -32,6 +32,13 @@
    color: var(--border-color);
 }
 
+.dropdown-menu {
+    right: -90px;
+}
+
+.dropdown-item {
+    padding-left: 7px;
+}
 
 .p-outline {
     border-color:var(--primary-color);
