@@ -257,6 +257,9 @@ background-color: var(--secondary-color);
     width: 66%;
 }
 
+.custom-length-pp {
+    width: 98%;
+}
 .custom-length-sm {
     width: 29%;
 }
@@ -366,6 +369,18 @@ footer {
 }
 .html {
     color: rgb(25, 25, 255);
+}
+
+.node {
+    color: rgb(255, 127, 42);
+}
+
+.herkou {
+    color: rgb(128, 0, 117);
+}
+
+.iconify {
+    margin-bottom: 2px;
 }
 
 /*gradient text colors */
