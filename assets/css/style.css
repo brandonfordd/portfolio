@@ -27,6 +27,12 @@
     --box-shadow: 0 0 20px #51fcba41;
 }
 
+@font-face { font-family: Bender; src: url('bender.otf'); } 
+
+html, body {
+    font-family: bender
+}
+
 .p-border-color {
     border: solid;
    color: var(--border-color);
