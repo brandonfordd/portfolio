@@ -19,11 +19,11 @@
     --secondary-color: rgb(255, 196, 0);
     --tertiary-color: white;
     --font-color: #f2fff8ca;
-    --secondary-font-color:#777;
+    --secondary-font-color:rgb(192, 192, 192);
     --border-color: #51fcba;
     --secondary-border-color: rgb(37, 37, 37);
     --bg-color: #292b2c;
-    --secondary-bg-color:rgb(255, 255, 255);
+    --secondary-bg-color:rgb(31, 31, 31);
     --box-shadow: 0 0 20px #51fcba41;
 }
 
@@ -482,6 +482,7 @@ footer {
     padding: 0;
     margin:0;
     margin-top: 30px;
+    margin-right: 100px;
 }
 
 .skillbar {
@@ -694,7 +695,7 @@ hr {
 .profile-card-4 .profile-content {
     position: relative;
     padding: 15px;
-    background-color: #FFF;
+    background-color: var(--secondary-bg-color);
 }
 
 .profile-card-4 .profile-name {
@@ -737,11 +738,11 @@ hr {
 .profile-card-4 .profile-content::before {
     content: "";
     position: absolute;
-    height: 20px;
+    height: 25px;
     top: -10px;
     left: 0px;
     right: 0px;
-    background-color: #FFF;
+    background-color:  var(--secondary-bg-color);
     z-index: 0;
     transform: skewY(3deg);
 }
