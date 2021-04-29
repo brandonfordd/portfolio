@@ -95,124 +95,127 @@
   </div>
 
   <main>
-    <div class="jumbotron jumbotron-fluid p-background-color" id="about-me">
-      <div class="container container-fluid">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6 customPM">
-            <img class="img-fluid p-border-color img-fluid-custom rounded img-border-width"src="assets/images/me.jpg" alt="placeholder">
-          </div>
-          <div class="col-12 col-md-6">
-            <h1 class="p-primary-color display-4 textS"><i class="far fa-address-card"></i> About me</h1>
-            <hr>
-            <p class="h3 p-font-color lead">Hello! My name is Brandon Ford and this is my portfolio! I'm a beginner Software Engineer and Full Stack Web Developer based in the Northern Virginia area. Currently studying at a George Washington University bootcamp for Front-end and Back-end Web Development. Below are some skills and current Projects!</p>
-            <hr>
-           
-            <div class="container col-9 resumeBtnC">
-              <a role="button" class="btn p-btn-color btn-sm resumeDBtn noWrap" href="assets/downloads/brandonford_resume.pdf"download  >Download Resume <i class="fas fa-download"></i></a>
-              <a role="button" target="_black" class="btn btn-secondary btn-sm resumePBtn noWrap" href="assets/downloads/brandonford_resume.pdf">Preview Resume <i class="far fa-file-pdf"></i></a>
+    <div class="container" id="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <div class="col-md-8 col-lg-10 aboutCard">
+              <hr>
+              <div class="profile-card-4 text-center"><img class="img-fluid "src="assets/images/me.jpg" alt="placeholder">
+                <div class="profile-content">
+                  <div class="profile-name">  Brandon Ford
+                      <p>@brandonfordd</p>
+                  </div>
+                  <div class="profile-description  linear-wipe-big">Hello! My name is Brandon Ford and this is my portfolio! I'm a beginner Software Engineer and Full Stack Web Developer based in the Northern Virginia area. Currently studying at a George Washington University bootcamp for Front-end and Back-end Web Development. Below are some skills and current Projects!</div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="container col-12 resumeBtnC">
+                          <a role="button" class="btn p-btn-color btn-sm resumeDBtn noWrap" href="assets/downloads/brandonford_resume.pdf"download  >Download Resume <i class="fas fa-download"></i></a>
+                          <a role="button" target="_black" class="btn btn-secondary btn-sm resumePBtn noWrap" href="assets/downloads/brandonford_resume.pdf">Preview Resume <i class="far fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
             </div>
-            
           </div>
-        </div>
+          <div class="col-md-12 col-lg-6 container skillsWrapper">
+            <div class="container d-flex ">
+              <h1 class="p-primary-color display-4 textS skillsT container">
+                Skills
+                <i id="gear1" class="fa fa-5x fa-gear spin p-primary-color"></i>
+                <i id="gear2" class="fa fa-5x fa-gear spin-back p-tertiary-color"></i>
+                <i id="gear3" class="fa fa-5x fa-gear spin-back p-tertiary-color"></i>        
+              </h1>   
+            </div>
+            <div class="col-12">
+              <div class="skillbar" data-percent="70%">
+                <hr>
+                <div class="skillbar-title noWrap"><i class="far fa-window-maximize"></i> Front End Web Development </div>
+                <div class="skill-bar-percent">70%</div>
+                <div class="skillbar-bar" style="width: 70%; background-color: rgb(255, 50, 50); animation: animated-borderSkillC 1.5s infinite;"></div>
+              </div>
+              <div class="skillbar" data-percent="95%">
+                <div class="skillbar-title"><i class="fab fa-html5"></i> HTML </div>
+                <div class="skill-bar-percent">95%</div>
+                <div class="skillbar-bar" style="width: 95%"></div>
+              </div>
+              <div class="skillbar" data-percent="90%">
+                <div class="skillbar-title"><i class="fab fa-css3-alt"></i> CSS <i> Bootstrap</i><i> Foundation</i></div>
+                <div class="skill-bar-percent">90%</div>
+                <div class="skillbar-bar" style="width: 90%"></div>
+              </div>
+              <div class="skillbar" data-percent="70%">
+                <div class="skillbar-title"><i class="fab fa-js-square"></i> JavaScript <i> JQuery</i><i> Node</i></div>
+                <div class="skill-bar-percent">70%</div>
+                <div class="skillbar-bar" style="width: 70%"></div>
+              </div>
+              <div class="skillbar" data-percent="0%">
+                <div class="skillbar-title"><i class="fab fa-react"></i> React </div>
+                <div class="skill-bar-percent">0%</div>
+                <div class="skillbar-bar" style="width: 0%"></div>
+              </div>
+            </div>
+            <div class="col-12 ">
+              <div class="skillbar" data-percent="40s%">
+                <div class="skillbar-title noWrap"><i class="fas fa-tools"></i> Back End Web Development </div>
+                <div class="skill-bar-percent">40%</div>
+                <div class="skillbar-bar" style="width: 40%; background-color: rgb(255, 50, 50); animation: animated-borderSkillC 1.5s infinite;"></div>
+              </div>
+              <div class="skillbar" data-percent="20%">
+                <div class="skillbar-title"><i class="fas fa-database"></i> Databases<i> MySql</i></div>
+                <div class="skill-bar-percent">20%</div>
+                <div class="skillbar-bar" style="width: 20%"></div>
+              </div>
+              <div class="skillbar" data-percent="90%">
+                <div class="skillbar-title"><i class="fas fa-wrench"></i> APIs </div>
+                <div class="skill-bar-percent">90%</div>
+                <div class="skillbar-bar" style="width: 90%"></div>
+              </div>
+              <div class="skillbar" data-percent="50%">
+                <div class="skillbar-title"><i class="fas fa-server"></i> Servers <i>Heroku</i></div>
+                <div class="skill-bar-percent">50%</div>
+                <div class="skillbar-bar" style="width: 50%"></div>
+              </div>
+              <div class="skillbar" data-percent="30%">
+                <div class="skillbar-title"><i class="fas fa-network-wired"> </i>Network </i></div>
+                <div class="skill-bar-percent">30%</div>
+                <div class="skillbar-bar" style="width: 30%"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="skillbar" data-percent="90%">
+                <div class="skillbar-title"><i class="fab fa-pushed"></i> Software Development Life Cycle </div>
+                <div class="skill-bar-percent">90%</div>
+                <div class="skillbar-bar" style="width: 90%; background-color: rgb(255, 50, 50); animation: animated-borderSkillC 1.5s infinite;"></div>
+              </div>
+              <div class="skillbar" data-percent="95%">
+                <div class="skillbar-title"><i class="fas fa-sitemap"></i> Development </div>
+                <div class="skill-bar-percent">95%</div>
+                <div class="skillbar-bar" style="width: 95%"></div>
+              </div>
+              <div class="skillbar" data-percent="90%">
+                <div class="skillbar-title"><i class="fas fa-vial"></i> Testing </div>
+                <div class="skill-bar-percent">90%</div>
+                <div class="skillbar-bar" style="width: 90%"></div>
+              </div>
+              <div class="skillbar" data-percent="80%">
+                <div class="skillbar-title"><i class="fas fa-chart-bar"></i> Analysis </div>
+                <div class="skill-bar-percent">80%</div>
+                <div class="skillbar-bar" style="width: 80%"></div>
+              </div>
+              <div class="skillbar" data-percent="90%">
+                <div class="skillbar-title"><i class="fas fa-clipboard-check"></i> Deployment </div>
+                <div class="skill-bar-percent">90%</div>
+                <div class="skillbar-bar" style="width: 90%"></div>
+                <hr>
+              </div>
+            </div>
+          </div>
+          </div> 
+        </div>   
       </div>
-    </div>
-
-    <div class="container d-flex ">
-      <h1 class="p-primary-color display-4 textS skillsT container">
-        Skills
-        <i id="gear1" class="fa fa-5x fa-gear spin p-primary-color"></i>
-        <i id="gear2" class="fa fa-5x fa-gear spin-back p-tertiary-color"></i>
-        <i id="gear3" class="fa fa-5x fa-gear spin-back p-tertiary-color"></i>        
-      </h1>   
-    </div>
-    <div class="container skillsWrapper">
-      <hr>
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="skillbar" data-percent="70%">
-            <div class="skillbar-title noWrap"><i class="far fa-window-maximize"></i> Front End Web Development </div>
-            <div class="skill-bar-percent">70%</div>
-            <div class="skillbar-bar" style="width: 70%; background-color: rgb(255, 50, 50); animation: animated-borderSkillC 1.5s infinite;"></div>
-          </div>
-          <div class="skillbar" data-percent="95%">
-            <div class="skillbar-title"><i class="fab fa-html5"></i> HTML </div>
-            <div class="skill-bar-percent">95%</div>
-            <div class="skillbar-bar" style="width: 95%"></div>
-          </div>
-          <div class="skillbar" data-percent="90%">
-            <div class="skillbar-title"><i class="fab fa-css3-alt"></i> CSS <i> Bootstrap</i><i> Foundation</i></div>
-            <div class="skill-bar-percent">90%</div>
-            <div class="skillbar-bar" style="width: 90%"></div>
-          </div>
-          <div class="skillbar" data-percent="70%">
-            <div class="skillbar-title"><i class="fab fa-js-square"></i> JavaScript <i> JQuery</i><i> Node</i></div>
-            <div class="skill-bar-percent">70%</div>
-            <div class="skillbar-bar" style="width: 70%"></div>
-          </div>
-          <div class="skillbar" data-percent="0%">
-            <div class="skillbar-title"><i class="fab fa-react"></i> React </div>
-            <div class="skill-bar-percent">0%</div>
-            <div class="skillbar-bar" style="width: 0%"></div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="skillbar" data-percent="40s%">
-            <div class="skillbar-title noWrap"><i class="fas fa-tools"></i> Back End Web Development </div>
-            <div class="skill-bar-percent">40%</div>
-            <div class="skillbar-bar" style="width: 40%; background-color: rgb(255, 50, 50); animation: animated-borderSkillC 1.5s infinite;"></div>
-          </div>
-          <div class="skillbar" data-percent="20%">
-            <div class="skillbar-title"><i class="fas fa-database"></i> Databases<i> MySql</i></div>
-            <div class="skill-bar-percent">20%</div>
-            <div class="skillbar-bar" style="width: 20%"></div>
-          </div>
-          <div class="skillbar" data-percent="90%">
-            <div class="skillbar-title"><i class="fas fa-wrench"></i> APIs </div>
-            <div class="skill-bar-percent">90%</div>
-            <div class="skillbar-bar" style="width: 90%"></div>
-          </div>
-          <div class="skillbar" data-percent="50%">
-            <div class="skillbar-title"><i class="fas fa-server"></i> Servers <i>Heroku</i></div>
-            <div class="skill-bar-percent">50%</div>
-            <div class="skillbar-bar" style="width: 50%"></div>
-          </div>
-          <div class="skillbar" data-percent="30%">
-            <div class="skillbar-title"><i class="fas fa-network-wired"> </i>Network </i></div>
-            <div class="skill-bar-percent">30%</div>
-            <div class="skillbar-bar" style="width: 30%"></div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="skillbar" data-percent="90%">
-            <div class="skillbar-title"><i class="fab fa-pushed"></i> Software Development Life Cycle </div>
-            <div class="skill-bar-percent">90%</div>
-            <div class="skillbar-bar" style="width: 90%; background-color: rgb(255, 50, 50); animation: animated-borderSkillC 1.5s infinite;"></div>
-          </div>
-          <div class="skillbar" data-percent="95%">
-            <div class="skillbar-title"><i class="fas fa-sitemap"></i> Development </div>
-            <div class="skill-bar-percent">95%</div>
-            <div class="skillbar-bar" style="width: 95%"></div>
-          </div>
-          <div class="skillbar" data-percent="90%">
-            <div class="skillbar-title"><i class="fas fa-vial"></i> Testing </div>
-            <div class="skill-bar-percent">90%</div>
-            <div class="skillbar-bar" style="width: 90%"></div>
-          </div>
-          <div class="skillbar" data-percent="80%">
-            <div class="skillbar-title"><i class="fas fa-chart-bar"></i> Analysis </div>
-            <div class="skill-bar-percent">80%</div>
-            <div class="skillbar-bar" style="width: 80%"></div>
-          </div>
-          <div class="skillbar" data-percent="90%">
-            <div class="skillbar-title"><i class="fas fa-clipboard-check"></i> Deployment </div>
-            <div class="skill-bar-percent">90%</div>
-            <div class="skillbar-bar" style="width: 90%"></div>
-          </div>
-        </div>
-      </div>
-      <hr>
-    </div>
-  
 
     <div class="container work-body" id="work">
       <h1 class="p-primary-color display-4 textS"><i class="fas fa-project-diagram"></i> Projects</h1>

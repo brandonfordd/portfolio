@@ -8,7 +8,7 @@
     --secondary-font-color:rgb(228, 228, 228);
     --border-color: #009e3d;
     --secondary-border-color:#292b2c;
-    --bg-color: #d1d1d1;
+    --bg-color: #3d3d3d;
     --secondary-bg-color: rgb(53, 53, 53);
     --box-shadow:  0 0 20px #00000086;
 }
@@ -18,12 +18,12 @@
     --primary-colorD: #00bd74;
     --secondary-color: rgb(255, 196, 0);
     --tertiary-color: white;
-    --font-color: #f2fff8;
-    --secondary-font-color:#313131;
+    --font-color: #f2fff8ca;
+    --secondary-font-color:#777;
     --border-color: #51fcba;
     --secondary-border-color: rgb(37, 37, 37);
     --bg-color: #292b2c;
-    --secondary-bg-color:#d8d8d8;
+    --secondary-bg-color:rgb(255, 255, 255);
     --box-shadow: 0 0 20px #51fcba41;
 }
 
@@ -288,6 +288,11 @@ background-color: var(--secondary-color);
     text-shadow: 2px 1px 0px var(--tertiary-color);
 }
 
+.aboutCard {
+    margin:0 auto;
+    margin-top: 50px;
+}
+
 footer {
     margin-top: 50px;
 }
@@ -420,6 +425,30 @@ footer {
     }
 }
 
+.linear-wipe-big {
+    /* text-align: center; */
+    
+    background: linear-gradient(to right, #3fca95a2 20%, #777 40%,#777 60%, #3fca95a2 80%);
+    background-size: 200% auto;
+    
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 20s linear infinite;
+   @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+  }
+  @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+  }
+
 /* responsive skill bar properties */
 
 @keyframes animated-borderSkills {
@@ -452,14 +481,14 @@ footer {
     text-align: center;
     padding: 0;
     margin:0;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .skillbar {
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-top: 20px;
 }
 
@@ -645,4 +674,79 @@ hr {
     #about-me h1 {
         margin-top: 40px;
     }
+}
+
+.profile-card-4 {
+    max-width: 600px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-4 img {
+    transition: all 0.25s linear;
+}
+
+.profile-card-4 .profile-content {
+    position: relative;
+    padding: 15px;
+    background-color: #FFF;
+}
+
+.profile-card-4 .profile-name {
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -70px;
+    color: #FFF;
+    font-size: 17px;
+}
+
+.profile-card-4 .profile-name p {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.profile-card-4 .profile-description {
+    color: #777;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.profile-card-4 .profile-overview {
+    padding: 15px 0px;
+}
+
+.profile-card-4 .profile-overview p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #777;
+}
+
+.profile-card-4 .profile-overview h4 {
+    color: #273751;
+    font-weight: bold;
+}
+
+.profile-card-4 .profile-content::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    background-color: #FFF;
+    z-index: 0;
+    transform: skewY(3deg);
+}
+
+.profile-card-4:hover img {
+    transform: rotate(5deg) scale(1.1, 1.1);
+    filter: brightness(110%);
 }
