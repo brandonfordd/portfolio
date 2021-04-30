@@ -33,6 +33,12 @@ html, body {
     font-family: bender
 }
 
+footer {
+    background-color: var(--secondary-bg-color);
+    color: var (--font-color);
+    margin-top: 50px;
+}
+
 .p-border-color {
     border: solid;
    color: var(--border-color);
@@ -293,9 +299,6 @@ background-color: var(--secondary-color);
     margin-top: 50px;
 }
 
-footer {
-    margin-top: 50px;
-}
 
 /* swing effect */
 @-webkit-keyframes swing
@@ -473,7 +476,7 @@ footer {
 .skillsWrapper {
      /* margin: 0 auto; */
      margin-bottom: 100px;
-     margin-top: 20px;
+     margin-top: 70px;
      padding: 0 50px;
 }
 
