@@ -152,9 +152,21 @@ nav a:hover {
 }
 
 .resumeDBtn {
+    color: rgb(0, 0, 0) !important;
     margin: 10px;
+    
 }
 
+.resumeDBtn:hover {
+    animation: animated-border 1.5s infinite;
+border-color: var(--secondary-color);
+background-color: var(--secondary-color);
+}
+.resumePBtn:hover {
+    animation: animated-border 1.5s infinite;
+border-color: var(--secondary-color);
+background-color: var(--secondary-color);
+}
 .resumePBtn {
     margin: 10px;
 }
