@@ -4,7 +4,8 @@
   "description": "https://brandonfordd.github.io/portfolio/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w assets/scss/ -o assets/css/"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/brandonfordd/portfolio#readme",
   "dependencies": {
     "@octokit/core": "^3.4.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "node-sass": "^5.0.0"
   }
 }
