@@ -156,7 +156,7 @@ hr {
 
 .hrSkills {
     margin-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 0;
     border-top: 1px solid var(--primary-colorD);
 }
@@ -170,9 +170,9 @@ hr {
 
 .profile-card-4 {
     max-width: 600px;
-    background-color: #FFF;
+    background-color: none;
     border-radius: 5px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 25px rgb(15, 15, 15);
     overflow: hidden;
     position: relative;
     margin: 10px auto;
@@ -252,8 +252,9 @@ hr {
 }
 
 .resumeDBtn {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0);
     margin: 10px;
+    background-color: var(--primary-color);
 }
 
 .resumeDBtn:hover {
@@ -307,6 +308,10 @@ hr {
  width: 100%;
  margin-bottom: 15px;
  margin-top: 20px;
+}
+
+.skillbarTop {
+    margin-top: 10px;
 }
 
 .skillbar-bar:before {
