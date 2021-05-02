@@ -133,9 +133,16 @@ hr {
 }
 
 /* custom separators for each sections */
-.hrTitle {
+.hrProjects {
     margin-top: 0px;
     margin-bottom: 26px;
+    border: 0;
+    border-top: 1px solid var(--primary-colorD);
+}
+
+.hrAssignments {
+    margin-top: 0px;
+    margin-bottom: 0px;
     border: 0;
     border-top: 1px solid var(--primary-colorD);
 }
@@ -366,32 +373,12 @@ hr {
 .projectsTitle {
     margin-bottom: 0;
     margin-top: 50px;
+    margin-left: 30px;
     color: var(--primary-color);
     text-shadow: 2px 1px 0px var(--tertiary-color);
-    font: size 3.5em;
+    font-size: 3.5em;
     font-weight: 300;
     line-height: 1.2;
-}
-
-.main-card-body {
-    background-color: var(--secondary-bg-color);
-    color: var(--secondary-font-color);
-    padding-bottom: 2px;
-}
-
-.group-card-body {
-    background-color: var(--secondary-bg-color);
-    color: var(--secondary-font-color);
-    padding-bottom: 2px;
-}
-
-.group-img-height {
-    border: none;
-}
-
-.card-footer {
-    background-color:var(--secondary-bg-color); ;
-    border: none;
 }
 
 .customCard {
@@ -406,6 +393,40 @@ hr {
     animation: animated-border 1.5s infinite;
     border-color: var(--secondary-color);
     background-color: var(--secondary-color);
+}
+
+.main-card-body {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-font-color);
+    padding-bottom: 2px;
+}
+
+/* assignments section */
+
+.assignmentsTitle {
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 50px;
+    margin-right: 30px;
+    color: var(--primary-color);
+    text-shadow: 2px 1px 0px var(--tertiary-color);
+    font-size: 3.5em;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.group-card-body {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-font-color);
+    padding-bottom: 2px;
+}
+
+.group-img-height {
+    border: none;
+}
+
+.card-footer {
+    background-color:var(--secondary-bg-color); ;
+    border: none;
 }
 
 .custom-length-pm {
