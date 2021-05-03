@@ -20,7 +20,7 @@
     --tertiary-color: white;
     --font-color: #f2fff8ca;
     --secondary-font-color:rgb(192, 192, 192);
-    --border-color: #51fcba;
+    --border-color:#51fcba ;
     --secondary-border-color: rgb(37, 37, 37);
     --bg-color: #292b2c;
     --secondary-bg-color:rgb(31, 31, 31);
@@ -172,7 +172,7 @@ hr {
     max-width: 600px;
     background-color: none;
     border-radius: 5px;
-    box-shadow: 0px 0px 25px rgb(15, 15, 15);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.657);
     overflow: hidden;
     position: relative;
     margin: 10px auto;
@@ -278,8 +278,19 @@ hr {
 }
 
 
+/* icon in about me css */
+.containerIcons a {
+    color: var(--secondary-color);
+    outline: 1px solid var(--primary-color);
+    border: none;
+    background-color: var(--secondary-border-color);
+}
 
-
+.containerIcons a:hover {
+    color: white;
+    background-color: var(--secondary-border-color);
+    outline:none;
+}
 
 /* Skills sections */
 .skillsWrapper {
