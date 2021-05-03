@@ -300,6 +300,8 @@ hr {
    font-size: 3.5em;
    font-weight: 300;
    line-height: 1.2;
+   white-space:nowrap;
+   text-overflow: none;
 }
 
 .skillbar {
@@ -384,6 +386,8 @@ hr {
     font-size: 3.5em;
     font-weight: 300;
     line-height: 1.2;
+    white-space:nowrap;
+    text-overflow: none;
 }
 
 .customCard {
@@ -415,9 +419,11 @@ hr {
     margin-right: 30px;
     color: var(--primary-color);
     text-shadow: 2px 1px 0px var(--tertiary-color);
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 300;
     line-height: 1.2;
+    white-space:nowrap;
+    text-overflow: none;
 }
 .group-card-body {
     background-color: var(--secondary-bg-color);
