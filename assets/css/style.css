@@ -621,6 +621,13 @@ footer {
     .m-lc {
         margin-left: 10px;
     }
+    .assignmentsTitle {
+        margin-right: 0px;
+    }
+    
+    .projectsTitle {
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width: 470px) {
