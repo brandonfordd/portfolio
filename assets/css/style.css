@@ -260,12 +260,14 @@ hr {
 .resumeDBtn:hover {
     animation: animated-border 1.5s infinite;
     border-color: var(--secondary-color);
+    color: black;
     background-color: var(--secondary-color);
 }
 
 .resumePBtn:hover {
     animation: animated-border 1.5s infinite;
     border-color: var(--secondary-color);
+    color: black;
     background-color: var(--secondary-color);
 }
 
@@ -281,7 +283,8 @@ hr {
 /* icon in about me css */
 .containerIcons a {
     color: var(--secondary-color);
-    outline: 1px solid var(--primary-color);
+    /* outline: 1px solid var(--primary-color); */
+    box-shadow: 0 0 0 1pt var(--primary-color);
     border: none;
     background-color: var(--secondary-border-color);
 }
@@ -289,7 +292,7 @@ hr {
 .containerIcons a:hover {
     color: white;
     background-color: var(--secondary-border-color);
-    outline:none;
+    box-shadow: none;
 }
 
 /* Skills sections */
