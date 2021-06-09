@@ -410,7 +410,7 @@ hr {
     background-color: var(--border-color);
     border-radius: 3px;
     box-shadow: none;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 .customCard:hover {
